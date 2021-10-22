@@ -1,0 +1,6257 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Teko:wght@300;400;500;600;700&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap");
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Teko;
+    src: url(../fonts/Teko/Teko-Light.ttf);
+}
+
+@font-face {
+    font-family: Teko;
+    src: url(../fonts/Teko/Teko-Medium.ttf);
+}
+
+@font-face {
+    font-family: Teko;
+    src: url(../fonts/Teko/Teko-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+input:hover,
+input:focus,
+input:active,
+select:hover,
+select:focus,
+select:active,
+textarea:hover,
+textarea:focus,
+textarea:active,
+button:hover,
+button:focus,
+button:active {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: white;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0;
+}
+
+.modal-content .close {
+    opacity: 1;
+}
+
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.modal-content .close img {
+    width: 30px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.modal-content .close:hover {
+    opacity: 1;
+}
+
+.modal-content .close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+}
+
+.modal-content .modal-header {
+    border: none;
+}
+
+.modal-content .modal-header .close {
+    padding: 0;
+}
+
+.modal-content .wizard {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.modal-content .wizard .wizard-inner .nav-tabs {
+    border: none;
+}
+
+.modal-content .wizard .wizard-inner .nav-tabs li img {
+    width: 40px;
+    margin-top: -16px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.modal-content .wizard .wizard-inner .nav-tabs li a {
+    font-family: "Oswald", sans-serif;
+    color: #666666;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.modal-content .wizard .wizard-inner .nav-tabs li:focus a,
+.modal-content .wizard .wizard-inner .nav-tabs li.active a,
+.modal-content .wizard .wizard-inner .nav-tabs li:hover a {
+    color: #1860a5;
+}
+
+.modal-content .wizard .tab-content {
+    margin-top: 50px;
+}
+
+.modal-content .wizard .tab-content .contentBox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+    padding: 0;
+}
+
+.modal-content .wizard .tab-content .contentBox .taglines {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 16px;
+    letter-spacing: 1.56px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-content .wizard .tab-content .contentBox .taglines:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+.modal-content .wizard .tab-content .contentBox .miniheading {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.modal-content .wizard .tab-content .contentBox .checkboxs {
+    display: inline-block;
+    width: 49%;
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox .checkboxs .checkmark {
+    top: 3px;
+}
+
+.modal-content .wizard .tab-content .contentBox .checkboxs>input:checked {
+    color: #1860a5;
+}
+
+.modal-content .wizard .tab-content .contentBox span.error {
+    color: #CE1717;
+    font-family: Ubuntu;
+    font-size: 16px;
+    letter-spacing: 1.56px;
+    line-height: 20px;
+}
+
+.modal-content .wizard .tab-content .contentBox input {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: #999999;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.modal-content .wizard .tab-content .contentBox input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox input:-ms-input-placeholder {
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox input::-ms-input-placeholder {
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox input::placeholder {
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox input:focus,
+.modal-content .wizard .tab-content .contentBox input:active {
+    border-color: #1860a5;
+}
+
+.modal-content .wizard .tab-content .contentBox textarea {
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: Oswald;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: #999999;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.modal-content .wizard .tab-content .contentBox textarea:focus,
+.modal-content .wizard .tab-content .contentBox textarea:active {
+    border-color: #1860a5;
+}
+
+.modal-content .wizard .tab-content .contentBox textarea::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox textarea:-ms-input-placeholder {
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox textarea::-ms-input-placeholder {
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox textarea::placeholder {
+    color: #999999;
+}
+
+.modal-content .wizard .tab-content .contentBox select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../images/select.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 25px;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 50px;
+    color: #999999;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.modal-content .wizard .tab-content .contentBox select:focus,
+.modal-content .wizard .tab-content .contentBox select:active {
+    border-color: #1860a5;
+}
+
+.modal-content .wizard .tab-content .contentBox .inputButtons {
+    display: block;
+    text-align: right;
+}
+
+.modal-content .wizard .tab-content .contentBox .inputButtons .prev-step,
+.modal-content .wizard .tab-content .contentBox .inputButtons .next-step {
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 22px;
+    text-transform: uppercase;
+    height: 48px;
+    width: 168px;
+    display: inline-block;
+}
+
+.modal-content .wizard .tab-content .contentBox .inputButtons .prev-step {
+    float: left;
+    background-color: transparent;
+    color: #1860a5;
+    border: solid 3px #1860a5;
+}
+
+.modal-content .wizard .tab-content .contentBox .inputButtons .next-step {
+    background-color: #1860a5;
+    border: #1860a5 solid 3px;
+    color: #fff;
+}
+
+.modal-content .wizard .tab-content .checkboxs {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 50px;
+    font-family: Ubuntu;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    line-height: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.modal-content .wizard .tab-content .checkboxs input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.modal-content .wizard .tab-content .checkboxs .checkmark {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: solid 2px #999999;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.modal-content .wizard .tab-content .checkboxs .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.modal-content .wizard .tab-content .checkboxs input:checked~.checkmark {
+    border-color: #1860a5;
+}
+
+.modal-content .wizard .tab-content .checkboxs input:checked~.checkmark:after {
+    display: block;
+}
+
+.modal-content .wizard .tab-content .checkboxs .checkmark:after {
+    width: 17px;
+    height: 17px;
+    border: solid #1860a5 1px;
+    background-color: #1860a5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.aboutSection,
+.eaglSection,
+.gallerySection,
+.mediaSection,
+.partnerSection,
+.playerSection,
+.sponsorSection,
+.teamsSection,
+.contactSection,
+.testimonialSection {
+    /* background-image: url(../images/background.png); */
+    background-repeat: repeat;
+}
+
+.navbar {
+    padding-left: 0;
+    background-color: #1860a5;
+    color: #fff;
+    font-family: Oswald;
+    height: 72px;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-brand {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/logoBg.png);
+    height: 72px;
+    width: 330px;
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.navbar .navbar-brand .logo {
+    width: 180px;
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .navbar-nav .nav-item {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-item:first-child {
+    margin-left: 0;
+}
+
+.navbar .navbar-nav .nav-item.active {
+    border-bottom: solid 3px white;
+}
+
+.navbar .navbar-nav .nav-item.social-item {
+    display: none;
+}
+
+.navbar .navbar-nav .dropdown-menu a.dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu a.dropdown-item:active,
+.navbar .navbar-nav .dropdown-menu a.dropdown-item.active {
+    background-color: #1860a5;
+    color: #fff;
+}
+
+footer {
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+footer .footer {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/footerBg.png);
+    padding: 100px;
+}
+
+footer .footer .head {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer .footer .desc {
+    text-transform: none;
+    margin-bottom: 100px;
+}
+
+footer .footer .desc img {
+    margin-left: 10px;
+    width: 170px;
+}
+
+footer .footer .desc .golf {
+    width: 90px;
+    margin-left: 30px;
+}
+
+footer .footer .socialMedia {
+    text-transform: none;
+}
+
+footer .footer .socialMedia img {
+    margin-left: 10px;
+    width: 50px;
+}
+
+footer .footer .socialMedia:last-child {
+    margin-bottom: 0;
+}
+
+footer .footer .socialMedia:last-child .social {
+    margin-left: 10px;
+}
+
+footer .footer ul {
+    list-style: none;
+}
+
+footer .footer ul li {
+    margin-bottom: 15px;
+}
+
+footer .footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer input {
+    display: inline;
+    background-color: #fff;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+}
+
+footer .footer .submitButton {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background-color: #000;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    line-height: 22px;
+    display: inline;
+    height: 45px;
+    width: 160px;
+    position: absolute;
+    right: 0;
+}
+
+footer .copyright {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .copyright p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.announcement {
+    background-color: #fff;
+    color: #000;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.33px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.announcement p {
+    margin-bottom: 0;
+}
+
+.announcement p marquee {
+    width: calc(100% - 320px);
+}
+
+.announcement p .calendar {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.announcement p .date {
+    color: #1860a5;
+}
+
+.announcement p .social {
+    float: right;
+    line-height: 2;
+}
+
+.announcement p .social .socialIcon {
+    margin-left: 10px;
+    height: 20px;
+}
+
+.miniAbouts {
+    background-color: #bfbfbf;
+    padding: 0 10px;
+    z-index: 5;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.miniAbouts .nav-link {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.miniAbouts .nav-link.active,
+.miniAbouts .nav-link:hover {
+    color: #1860a5;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.miniAboutsMobile {
+    display: none;
+}
+
+.contactSection,
+.testimonialSection,
+.unveiledParty,
+.errorpage,
+.latestNewsSection,
+.gallerySection.albumSection {
+    margin-top: 72px;
+}
+
+.aboutSection,
+.eaglSection,
+.gallerySection,
+.mediaSection,
+.partnerSection,
+.playerSection,
+.sponsorSection,
+.teamsSection {
+    margin-top: 122px;
+}
+
+.landingPage {
+    margin-top: 130px;
+}
+
+.landingPage .hero {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/headerBg.png);
+    text-transform: uppercase;
+    padding: 50px;
+    color: #fff;
+}
+
+.landingPage .hero .content .thumbnail,
+.landingPage .hero .content .video {
+    width: 100%;
+}
+
+.landingPage .hero .content .overlayText {
+    width: 48%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: solid 8px #1860a5;
+    padding: 25px;
+    margin-left: 150px;
+    margin-top: -240px;
+}
+
+.landingPage .hero .content .overlayText .heading {
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.landingPage .hero .content .overlayText .read {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background-color: #000;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    line-height: 22px;
+    background-color: #1860a5;
+    margin-bottom: 15px;
+    margin-left: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.landingPage .hero .content .overlayPlay {
+    position: absolute;
+    width: 95%;
+}
+.landingPage .hero .content .hover {
+    background-color: yellow;
+}
+.landingPage .hero .content .overlayPlay .play {
+    width: 100px;
+    margin-left: 48%;
+    margin-top: -50%;
+}
+
+.landingPage .hero .content .overlayImage {
+    position: absolute;
+    width: 95%;
+}
+
+.landingPage .hero .content .overlayImage p {
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 15px;
+    display: block;
+    float: right;
+    margin-right: 185px;
+    margin-top: -250px;
+}
+
+.landingPage .hero .content .overlayImage .golf {
+    float: right;
+    display: block;
+    width: 180px;
+    margin-right: 150px;
+    margin-top: -220px;
+}
+
+.landingPage .about {
+    padding: 80px 150px 30px 150px;
+    color: #000;
+}
+
+.landingPage .about .heading {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: "Teko", sans-serif;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.landingPage .about .description {
+    text-align: justify;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.landingPage .about .description span {
+    font-weight: bold;
+}
+
+.landingPage .news {
+    padding: 30px 150px;
+    color: #000;
+}
+
+.landingPage .news .heading {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: "Teko", sans-serif;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.landingPage .news .nav.nav-pills {
+    width: 100%;
+    height: 70px;
+    border-top: solid 2px #000;
+    border-bottom: solid 2px #000;
+    margin-bottom: 30px;
+}
+
+.landingPage .news .nav.nav-pills .nav-item {
+    width: 33%;
+    text-align: center;
+}
+
+.landingPage .news .nav.nav-pills .nav-item .nav-link {
+    border: none;
+    line-height: 50px;
+    color: grey;
+    font-family: "Teko", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3.85px;
+}
+
+.landingPage .news .nav.nav-pills .nav-item .nav-link.active {
+    border-radius: 0;
+    background-color: #fff;
+    color: #000;
+    text-decoration: underline;
+    -webkit-text-decoration-color: #1860a5;
+    text-decoration-color: #1860a5;
+    text-decoration-thickness: 4px;
+}
+
+.landingPage .news .tab-content .content {
+    border-right: lightgrey solid 1px;
+}
+
+.landingPage .news .tab-content img {
+    margin-bottom: 20px;
+}
+
+.landingPage .news .tab-content h4 {
+    color: #000;
+    font-family: "Teko", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 3.85px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.landingPage .news .tab-content .description {
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.landingPage .news .tab-content .more {
+    color: #1860a5;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: right;
+}
+
+.landingPage .news .tab-content .more:hover {
+    text-decoration: none;
+}
+
+.landingPage .news .tab-content .videoBox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 20px;
+}
+
+.landingPage .news .tab-content .videoBox .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.landingPage .team {
+    margin-top: 50px;
+    color: #fff;
+    padding: 0 50px;
+    margin-bottom: 60px;
+}
+
+.landingPage .team .heading {
+    text-align: center;
+    color: #000;
+    line-height: 1;
+    font-family: "Teko", sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.landingPage .team img {
+    width: 100%;
+}
+
+.landingPage .team .leftSide .teamOwners {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    padding: 40px 30px;
+    background-image: url(../images/team.png);
+}
+
+.landingPage .team .leftSide .teamOwners .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 50px;
+    font-family: "Teko", sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.landingPage .team .leftSide .teamOwners .desc {
+    font-family: "Ubuntu", sans-serif;
+    text-align: justify;
+    line-height: 34px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.landingPage .team .leftSide .teamOwners a {
+    text-decoration: none;
+}
+
+.landingPage .team .leftSide .teamOwners .ownTeam {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background-color: #000;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    line-height: 22px;
+}
+
+.landingPage .team .leftSide .questions .title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-family: "Teko", sans-serif;
+    line-height: 72px;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.landingPage .team .leftSide .questions .card {
+    border: none;
+    border-radius: 0;
+}
+
+.landingPage .team .leftSide .questions .card .quest {
+    border: none;
+    border-radius: 0;
+    background-color: #1860a5;
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.landingPage .team .leftSide .questions .card .quest a {
+    color: #fff;
+}
+
+.landingPage .team .leftSide .questions .card .quest a img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.landingPage .team .leftSide .questions .card .quest .card-link.collapsed img {
+    content: url(../images/expand.svg);
+}
+
+.landingPage .team .leftSide .questions .card .quest .card-link img {
+    content: url(../images/contract.svg);
+}
+
+.landingPage .team .leftSide .questions .card .card-body {
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+    border: solid 1px #000;
+    margin-bottom: 10px;
+}
+
+.landingPage .team .leftSide .questions .card .card-body .miniTitle {
+    font-size: 25px;
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.landingPage .team .leftSide .questions .card .card-body .answers {
+    font-size: 18px;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table {
+    width: 780px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+    width: 363px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table tr,
+.landingPage .team .leftSide .questions .card .card-body table td,
+.landingPage .team .leftSide .questions .card .card-body table th {
+    border: none;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table th {
+    text-transform: uppercase;
+    background-color: #1860a5;
+    color: #fff;
+    font-weight: 700;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table td {
+    color: #000;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table tr:nth-child(even) {
+    background-color: #bfbfbf;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    overflow: scroll;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive img {
+    width: 25px;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive thead tr:first-child {
+    text-align: left;
+    background-color: #fff;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive tbody tr:last-child {
+    text-align: left;
+    background-color: #fff;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive::-webkit-scrollbar {
+    width: 4px;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive::-webkit-scrollbar-thumb {
+    background: #1860a5;
+    border-radius: 10px;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive::-webkit-scrollbar-track {
+    position: absolute;
+    right: -3rem;
+    top: -50rem;
+    background: transparent;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+
+.landingPage .team .leftSide .questions .card .card-body table.table-responsive::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.landingPage .team .leftSide .questions .card .card-body ul {
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+.landingPage .team .leftSide .questions .card .card-body ul li {
+    margin-bottom: 10px;
+}
+
+.landingPage .team .leftSide .register {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/register.png);
+    padding: 35px;
+    margin-top: 50px;
+}
+
+.landingPage .team .leftSide .register p {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.3;
+    text-align: justify;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.landingPage .team .leftSide .register .registerPlayer {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background-color: #000;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    line-height: 22px;
+}
+
+.landingPage .team .rightSide {
+    padding-top: 68px;
+}
+
+.landingPage .team .rightSide .players {
+    margin-bottom: 60px;
+}
+
+.landingPage .team .rightSide .federationSection {
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.landingPage .team .rightSide .federationSection .golf {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 220px;
+    width: 220px;
+}
+
+.landingPage .team .rightSide .federationSection .gee {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 140px;
+}
+
+.landingPage .team .rightSide .federationSection .desc {
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.landingPage .team .rightSide .bannerSection .banner {
+    margin-bottom: 60px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+}
+
+.landingPage .team .rightSide .bannerSection .banner p {
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.landingPage .team .rightSide .bannerSection .banner1 {
+    background-image: url(../images/image1.jpg);
+}
+
+.landingPage .team .rightSide .bannerSection .banner2 {
+    background-image: url(../images/image2.png);
+}
+
+.landingPage .team .rightSide .bannerSection .banner3 {
+    background-image: url(../images/image3.png);
+}
+
+.landingPage .team .rightSide .bannerSection .actionSection {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/rightSide.png);
+    padding: 285px 20px 50px 20px;
+}
+
+.landingPage .team .rightSide .bannerSection .actionSection p {
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.aboutSection {
+    font-family: "Ubuntu", sans-serif;
+    color: #000;
+    text-align: justify;
+}
+
+.aboutSection .heading {
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.aboutSection .description {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.aboutSection .minihead {
+    font-family: "Teko", sans-serif;
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+
+.aboutSection .concept {
+    padding: 100px 300px 50px 300px;
+}
+
+.aboutSection .concept ul {
+    margin-left: 25px;
+}
+
+.aboutSection .concept ul li {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.aboutSection .vision {
+    padding: 50px 150px;
+}
+
+.aboutSection .vision .visionsection {
+    background-image: url(../images/vision.png);
+    background-size: 100% 100%;
+    padding: 100px 150px;
+    color: #fff !important;
+}
+
+.aboutSection .promoters {
+    padding: 50px 300px;
+}
+
+.aboutSection .venues {
+    padding: 50px 300px;
+}
+
+.aboutSection .venues .description {
+    margin-bottom: 50px;
+}
+
+.aboutSection .venues .owl-carousel a {
+    text-decoration: none;
+}
+
+.aboutSection .venues .owl-nav.disabled,
+.aboutSection .venues .owl-nav {
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    color: #1860a5;
+}
+
+.aboutSection .venues .owl-nav.disabled .owl-prev,
+.aboutSection .venues .owl-nav.disabled .owl-next,
+.aboutSection .venues .owl-nav .owl-prev,
+.aboutSection .venues .owl-nav .owl-next {
+    position: absolute;
+    padding: 0px 15px 2px 15px !important;
+    border: solid 2px #1860a5;
+    border-radius: 50%;
+    margin-top: -200px;
+}
+
+.aboutSection .venues .owl-nav.disabled .owl-prev,
+.aboutSection .venues .owl-nav .owl-prev {
+    left: -50px;
+}
+
+.aboutSection .venues .owl-nav.disabled .owl-next,
+.aboutSection .venues .owl-nav .owl-next {
+    right: -50px;
+}
+
+.aboutSection .venues .card {
+    border: none;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutSection .venues .card .card-body {
+    border: none;
+    padding: 0;
+}
+
+.aboutSection .venues .card .card-body img {
+    width: 100%;
+}
+
+.aboutSection .venues .card .card-footer {
+    background-color: #1860a5;
+    border: none;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    height: 130px;
+}
+
+.aboutSection .venues .card .card-footer .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.aboutSection .venues .card .card-footer .short {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.aboutSection .format {
+    padding: 50px 300px;
+}
+
+.aboutSection .format .teams {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.aboutSection .format .teams .columns {
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.aboutSection .format .teams .columns:last-child {
+    border: none;
+}
+
+.aboutSection .format .teams .withImg,
+.aboutSection .format .teams img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+.aboutSection .format .teams .withImg {
+    color: #1860a5;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.aboutSection .format .teams .desc {
+    margin-bottom: 0;
+    color: #000;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 4.27px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.aboutSection .format ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+}
+
+.aboutSection .format ul li {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 4.27px;
+    margin-bottom: 30px;
+}
+
+.aboutSection .format .handicap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.aboutSection .format .point {
+    margin-top: 50px;
+}
+
+.aboutSection .format .point .miniText {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+
+.aboutSection .calendar {
+    padding: 50px 300px;
+}
+
+.aboutSection .calendar table {
+    width: 780px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.aboutSection .calendar table tr,
+.aboutSection .calendar table td,
+.aboutSection .calendar table th {
+    border: none;
+}
+
+.aboutSection .calendar table th {
+    text-transform: uppercase;
+    background-color: #1860a5;
+    color: #fff;
+    font-weight: 700;
+}
+
+.aboutSection .calendar table td {
+    color: #000;
+}
+
+.aboutSection .calendar table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.aboutSection .calendar table tr:nth-child(even) {
+    background-color: #bfbfbf;
+}
+
+.aboutSection .calendar table tr:last-child {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+
+.commingSoon {
+    height: 700px;
+    background-image: url(../images/commingSoon.png);
+    background-repeat: no-repeat;
+    background-size: 250px 400px;
+    background-position: center center;
+}
+
+.karachilion {
+    height: 700px;
+    background-image: url(../images/karachilion.png);
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    background-position: center center;
+}
+.SnowLeopards {
+    height: 700px;
+    background-image: url(../images/snow-leapords.jpeg);
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    background-position: center center;
+}
+.nocturnalbats {
+    height: 700px;
+    background-image: url(../images/nacturnal.jpeg);
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    background-position: center center;
+}
+
+.greywolf {
+    height: 700px;
+    background-image: url(../images/grey-wolf.jpeg);
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    
+    background-position: center center;
+}
+.markhor {
+    height: 700px;
+    background-image: url(../images/markhor.jpeg);
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    background-position: center center;
+}
+.viper {
+    height: 700px;
+    background-image: url(../images/viper.jpeg);
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    background-position: center center;
+}
+
+.playerSection,
+.partnerSection,
+.sponsorSection,
+.teamsSection,
+.eaglSection,
+.mediaSection,
+.gallerySection,
+.contactSection,
+.testimonialSection,
+.latestNewsSection {
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.playerSection .heading,
+.partnerSection .heading,
+.sponsorSection .heading,
+.teamsSection .heading,
+.eaglSection .heading,
+.mediaSection .heading,
+.gallerySection .heading,
+.contactSection .heading,
+.testimonialSection .heading,
+.latestNewsSection .heading {
+    font-size: 50px;
+    font-family: "Teko", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.playerSection .description,
+.partnerSection .description,
+.sponsorSection .description,
+.teamsSection .description,
+.eaglSection .description,
+.mediaSection .description,
+.gallerySection .description,
+.contactSection .description,
+.testimonialSection .description,
+.latestNewsSection .description {
+    font-size: 22px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.playerSection .description a,
+.partnerSection .description a,
+.sponsorSection .description a,
+.teamsSection .description a,
+.eaglSection .description a,
+.mediaSection .description a,
+.gallerySection .description a,
+.contactSection .description a,
+.testimonialSection .description a,
+.latestNewsSection .description a {
+    color: #1860a5;
+    text-decoration: none;
+}
+
+.playerSection .minihead,
+.partnerSection .minihead,
+.sponsorSection .minihead,
+.teamsSection .minihead,
+.eaglSection .minihead,
+.mediaSection .minihead,
+.gallerySection .minihead,
+.contactSection .minihead,
+.testimonialSection .minihead,
+.latestNewsSection .minihead {
+    font-family: "Teko", sans-serif;
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+
+.latestNewsSection {
+    padding: 100px 200px;
+}
+
+.latestNewsSection .newsImage {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.latestNewsSection .heading {
+    text-align: left;
+}
+
+.latestNewsSection .minihead {
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.latestNewsSection .description {
+    line-height: 1.5;
+}
+
+.playerSection .generalinformation {
+    padding: 100px 200px 50px 200px;
+}
+
+.playerSection .whocanregister {
+    padding: 50px 200px;
+}
+
+.playerSection .whocanregister table {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 780px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+    width: 715px;
+}
+
+.playerSection .whocanregister table tr,
+.playerSection .whocanregister table td,
+.playerSection .whocanregister table th {
+    border: none;
+}
+
+.playerSection .whocanregister table th {
+    text-transform: uppercase;
+    background-color: #1860a5;
+    color: #fff;
+    font-weight: 700;
+}
+
+.playerSection .whocanregister table td {
+    color: #000;
+}
+
+.playerSection .whocanregister table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.playerSection .whocanregister table tr:nth-child(even) {
+    background-color: #bfbfbf;
+}
+
+.playerSection .whocanregister table tr:first-child {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+
+.playerSection .registrationform button {
+    background-color: #1860a5;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    padding: 5px 30px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.playerSection .registrationform,
+.playerSection .playerspool {
+    padding: 50px 200px;
+}
+
+.playerSection .benefits {
+    padding: 50px 200px 100px 200px;
+}
+
+.playerSection .benefits .description ul {
+    margin-left: 50px;
+    list-style: square;
+}
+
+.playerSection .benefits .description ul li a {
+    color: inherit;
+}
+
+.partnerSection .opportunity {
+    padding: 100px 200px 50px 200px;
+}
+
+.partnerSection .opportunity ul {
+    margin-top: 30px;
+    margin-left: 30px;
+    list-style: disc;
+}
+
+.partnerSection .opportunity ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.partnerSection .opportunity ul+.description {
+    margin-top: 30px;
+}
+
+.partnerSection .opportunity .description a {
+    color: #1860a5;
+    text-decoration: none;
+}
+
+.partnerSection .benefits {
+    padding: 50px 200px 100px 200px;
+}
+
+.sponsorSection .opportunity {
+    padding: 100px 200px 50px 200px;
+}
+
+.sponsorSection .opportunity .description {
+    margin-top: 30px;
+}
+
+.sponsorSection .opportunity .description a {
+    color: #1860a5;
+    text-decoration: none;
+}
+
+.sponsorSection .opportunity table {
+    width: 780px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 587px;
+}
+
+.sponsorSection .opportunity table tr,
+.sponsorSection .opportunity table td,
+.sponsorSection .opportunity table th {
+    border: none;
+}
+
+.sponsorSection .opportunity table th {
+    text-transform: uppercase;
+    background-color: #1860a5;
+    color: #fff;
+    font-weight: 700;
+}
+
+.sponsorSection .opportunity table td {
+    color: #000;
+}
+
+.sponsorSection .opportunity table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.sponsorSection .opportunity table tr:nth-child(even) {
+    background-color: #bfbfbf;
+}
+
+.sponsorSection .opportunity table tr:first-child {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    text-transform: none;
+}
+
+.sponsorSection .benefits {
+    padding: 50px 200px 100px 200px;
+}
+
+.teamsSection .miniHeads {
+    color: #666666;
+    font-size: 20px;
+}
+
+.teamsSection img {
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+.teamsSection table {
+    width: 780px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.teamsSection table tr,
+.teamsSection table td,
+.teamsSection table th {
+    border: none;
+}
+
+.teamsSection table th {
+    text-transform: uppercase;
+    background-color: #1860a5;
+    color: #fff;
+    font-weight: 700;
+}
+
+.teamsSection table td {
+    color: #000;
+}
+
+.teamsSection table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.teamsSection table tr:nth-child(even) {
+    background-color: #bfbfbf;
+}
+
+.teamsSection table td,
+.teamsSection table th {
+    width: 33%;
+}
+
+.teamsSection table tr:first-child {
+    background-color: #fff;
+    color: #666666;
+    font-size: 20px;
+}
+
+.teamsSection table.table1 {
+    width: auto;
+}
+
+.teamsSection table.table1 td,
+.teamsSection table.table1 th {
+    width: auto;
+}
+
+.teamsSection .numberofteams {
+    padding: 100px 200px 50px 200px;
+}
+
+.teamsSection .teamstructure,
+.teamsSection .teamsapparel,
+.teamsSection .ownateam {
+    padding: 50px 200px;
+}
+
+.teamsSection .teambenefits {
+    padding: 50px 200px 100px 200px;
+}
+
+.contactSection .contactus {
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #000;
+}
+
+.contactSection .contactus select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 25px;
+    width: 100%;
+    background-color: #bfbfbf;
+    border: none;
+    padding: 10px 20px;
+    font-family: Teko;
+    font-size: 30px;
+}
+
+.contactSection .contactus select option {
+    font-size: 20px;
+}
+
+.contactSection .contactus .address {
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.contactSection .contactus .address a {
+    color: #1860a5;
+}
+
+.eaglSection table {
+    width: 780px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.eaglSection table tr,
+.eaglSection table td,
+.eaglSection table th {
+    border: none;
+}
+
+.eaglSection table th {
+    text-transform: uppercase;
+    background-color: #1860a5;
+    color: #fff;
+    font-weight: 700;
+}
+
+.eaglSection table td {
+    color: #000;
+}
+
+.eaglSection table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.eaglSection table tr:nth-child(even) {
+    background-color: #bfbfbf;
+}
+
+.eaglSection .calendar {
+    padding: 100px 200px 50px 200px;
+}
+
+.eaglSection .calendar table {
+    width: 520px;
+}
+
+.eaglSection .calendar table tr:first-child,
+.eaglSection .calendar table tr:last-child {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    text-transform: none;
+}
+
+.eaglSection .fixtures,
+.eaglSection .draws,
+.eaglSection .leaderboard,
+.eaglSection .teamstandings {
+    padding: 50px 200px;
+}
+
+.eaglSection .fixtures table tr:first-child,
+.eaglSection .draws table tr:first-child,
+.eaglSection .leaderboard table tr:first-child,
+.eaglSection .teamstandings table tr:first-child {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    text-transform: none;
+}
+
+.eaglSection .fixtures .table1,
+.eaglSection .draws .table1,
+.eaglSection .leaderboard .table1,
+.eaglSection .teamstandings .table1 {
+    width: 943px;
+}
+
+.eaglSection .fixtures .table2,
+.eaglSection .draws .table2,
+.eaglSection .leaderboard .table2,
+.eaglSection .teamstandings .table2 {
+    width: 528px;
+}
+
+.eaglSection .fixtures .table2 tr:first-child,
+.eaglSection .draws .table2 tr:first-child,
+.eaglSection .leaderboard .table2 tr:first-child,
+.eaglSection .teamstandings .table2 tr:first-child {
+    background-color: #bfbfbf;
+}
+
+.eaglSection .fixtures .table3,
+.eaglSection .draws .table3,
+.eaglSection .leaderboard .table3,
+.eaglSection .teamstandings .table3 {
+    width: 388px;
+}
+
+.eaglSection .fixtures .table3 tr:first-child,
+.eaglSection .draws .table3 tr:first-child,
+.eaglSection .leaderboard .table3 tr:first-child,
+.eaglSection .teamstandings .table3 tr:first-child {
+    background-color: #bfbfbf;
+}
+
+.eaglSection .video,
+.eaglSection .livebroadcast {
+    padding: 50px 200px 100px 200px;
+}
+
+.mediaSection .description ul,
+.gallerySection .description ul {
+    margin-left: 50px;
+    list-style: square;
+}
+
+.mediaSection .description ul li a,
+.gallerySection .description ul li a {
+    color: inherit;
+}
+
+.mediaSection .printmedia,
+.mediaSection .photos,
+.gallerySection .printmedia {
+    padding: 100px 200px 50px 200px;
+}
+
+.gallerySection .back {
+    border: none;
+    display: inline-block;
+    background: #1860a5;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 50px 50px 0;
+    padding: 10px 30px;
+    font-size: 14px;
+    letter-spacing: 3.2px;
+    line-height: 22px;
+    font-family: "Oswald", sans-serif;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.gallerySection .album {
+    padding: 10px 50px 0px 50px;
+}
+
+.gallerySection .album a {
+    color: inherit;
+}
+
+.gallerySection .album a:hover {
+    text-decoration: none;
+}
+
+.gallerySection .album .card {
+    border: solid lightgrey 2px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 0;
+}
+
+.gallerySection .album .card .title {
+    font-weight: 500;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallerySection .album .card .desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+}
+
+.gallerySection .album .left {
+    border-right: solid 1px lightgray;
+}
+
+.gallerySection .album .left .minihead {
+    margin-bottom: 20px;
+}
+
+.gallerySection .album .left ul {
+    list-style-type: none;
+    letter-spacing: 2px;
+}
+
+.gallerySection .album .left ul a li {
+    padding: 10px 5px;
+    border-top: solid lightgray 1px;
+}
+
+.gallerySection .album .left ul a:last-child li {
+    border-bottom: solid lightgray 1px;
+}
+
+.gallerySection .album .left ul a {
+    font-weight: 600;
+}
+
+.gallerySection .album .left ul li:hover,
+.gallerySection .album .left ul li.active {
+    background-color: #1860a5;
+    color: #fff;
+}
+
+.gallerySection .album .left ul li.active::after {
+    content: '\27A4';
+    float: right;
+    color: #fff;
+}
+
+.mediaSection .printmedia .commingSoon,
+.mediaSection .photos .commingSoon,
+.gallerySection .printmedia .commingSoon {
+    height: 400px;
+}
+
+.mediaSection .socialmedia,
+.mediaSection .tvcoverage,
+.gallerySection .socialmedia,
+.gallerySection .tvcoverage {
+    padding: 50px 200px;
+}
+
+.mediaSection .socialmedia .commingSoon,
+.mediaSection .tvcoverage .commingSoon,
+.gallerySection .socialmedia .commingSoon,
+.gallerySection .tvcoverage .commingSoon {
+    height: 400px;
+}
+
+.mediaSection .livebroadcast,
+.mediaSection .videos,
+.gallerySection .livebroadcast,
+.gallerySection .videos,
+.gallerySection .photos {
+    padding: 50px 200px 50px 200px;
+}
+
+.mediaSection .livebroadcast .commingSoon,
+.mediaSection .videos .commingSoon,
+.gallerySection .livebroadcast .commingSoon,
+.gallerySection .videos .commingSoon {
+    height: 400px;
+}
+
+.unveiledParty .videoBox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.unveiledParty .videoBox .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.unveiledParty .section-1 {
+    background-color: #000;
+    background-image: url(../images/eagl1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 150px 72px;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+}
+
+.unveiledParty .section-1 h1 {
+    color: #1860a5;
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 7.7px;
+    line-height: 1;
+    margin-bottom: 86px;
+    text-transform: uppercase;
+}
+
+.unveiledParty .section-1 h3 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 6.16px;
+    margin-bottom: 50px;
+}
+
+.unveiledParty .section-1 h6 {
+    color: #1860a5;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 3.85px;
+}
+
+.unveiledParty .section-2 {
+    padding: 72px;
+    padding-bottom: 144px;
+}
+
+.unveiledParty .section-3 {
+    padding: 72px;
+    background-color: #1860a5;
+}
+
+.unveiledParty .section-3 h4 {
+    color: #fff;
+    font-family: "Teko", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 72px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.unveiledParty .section-3 .download {
+    margin-top: 122px;
+    background-image: url(../images/blackBg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 72px;
+    text-align: center;
+}
+
+.unveiledParty .section-3 .download p {
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+.unveiledParty .section-3 .download .downloadSpeech {
+    background-color: #1860a5;
+    border: none;
+    height: 48px;
+    width: 261px;
+    padding: 10px 50px;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.unveiledParty .section-4 {
+    padding: 144px 72px;
+}
+
+.unveiledParty .section-4 .nav.nav-pills {
+    width: 100%;
+    height: 70px;
+    border-top: solid 2px #000;
+    border-bottom: solid 2px #000;
+    margin-bottom: 72px;
+}
+
+.unveiledParty .section-4 .nav.nav-pills .nav-item {
+    width: 50%;
+    text-align: center;
+}
+
+.unveiledParty .section-4 .nav.nav-pills .nav-item .nav-link {
+    border: none;
+    line-height: 50px;
+    color: #000;
+    font-family: "Teko", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3.85px;
+}
+
+.unveiledParty .section-4 .nav.nav-pills .nav-item .nav-link.active {
+    border-radius: 0;
+    background-color: #bfbfbf;
+}
+
+.unveiledParty .section-4 .tab-content h4 {
+    color: #000;
+    font-family: "Teko", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3.85px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.unveiledParty .section-4 .tab-content .row {
+    margin-bottom: 50px;
+}
+
+.unveiledParty .section-4 .tab-content .row .content {
+    padding: 20px 10px;
+}
+
+.unveiledParty .section-4 .tab-content .row .content h6 {
+    color: #000;
+    font-family: "Teko", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 2.31px;
+    line-height: 43px;
+    margin-bottom: 30px;
+}
+
+.unveiledParty .section-4 .tab-content .row .content .watch {
+    padding: 10px 50px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.unveiledParty .section-4 .tab-content .pagination {
+    margin-bottom: 0;
+}
+
+.unveiledParty .section-4 .tab-content .pagination .page-link {
+    border: 4px solid #000;
+    margin-right: 16px;
+    color: #000;
+    height: 70px;
+    width: 70px;
+    line-height: 43px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2.31px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.unveiledParty .section-4 .tab-content .pagination .page-link.active,
+.unveiledParty .section-4 .tab-content .pagination .page-link:hover {
+    background-color: #1860a5;
+    border: #1860a5;
+    color: #fff;
+    line-height: 50px;
+}
+
+.unveiledParty .section-4 .tab-content .pagination .page-link.prev {
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.unveiledParty .section-4 .tab-content .pagination .page-link.prev.active,
+.unveiledParty .section-4 .tab-content .pagination .page-link.prev:hover {
+    line-height: 48px;
+}
+
+.errorpage {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.errorpage img {
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+.errorpage .back {
+    display: block;
+    height: 48px;
+    width: 164px;
+    background-color: #1860a5;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    line-height: 48px;
+}
+
+.testimonialSection {
+    padding: 80px 72px;
+}
+
+.testimonialSection .testimonial {
+    margin-bottom: 144px;
+}
+
+.testimonialSection .testimonial:last-child {
+    margin-bottom: 0;
+}
+
+.testimonialSection .testimonial img {
+    border-radius: 100%;
+}
+
+.testimonialSection .testimonial .contentBox {
+    position: relative;
+    height: 100%;
+}
+
+.testimonialSection .testimonial .contentBox .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: calc(100% - 60px);
+    background: url(../images/testimonials/air_quotes_1.png) top 30px left 0 no-repeat, url(../images/testimonials/air_quotes_2.png) right 0 bottom 30px no-repeat;
+}
+
+.testimonialSection .testimonial .contentBox .content .description {
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.testimonialSection .testimonial .contentBox .content1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.testimonialSection .testimonial .contentBox .content1 .name {
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.testimonialSection .testimonial .contentBox .content1 .designation {
+    color: #666666;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.gallerySection h4 {
+    color: #000;
+    font-family: "Teko", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3.85px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.gallerySection .row {
+    margin-bottom: 50px;
+}
+
+.gallerySection .row .content {
+    padding: 20px 10px;
+}
+
+.gallerySection .row .content h6 {
+    color: #000;
+    font-family: "Teko", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 2.31px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.gallerySection .row .content .watch {
+    padding: 10px 50px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.gallerySection .pagination {
+    margin-bottom: 0;
+}
+
+.gallerySection .pagination .page-link {
+    border: 4px solid #000;
+    margin-right: 16px;
+    color: #000;
+    height: 70px;
+    width: 70px;
+    line-height: 43px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2.31px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.gallerySection .pagination .page-link.active,
+.gallerySection .pagination .page-link:hover {
+    background-color: #1860a5;
+    border: #1860a5;
+    color: #fff;
+    line-height: 50px;
+}
+
+.gallerySection .pagination .page-link.prev {
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.gallerySection .pagination .page-link.prev.active,
+.gallerySection .pagination .page-link.prev:hover {
+    line-height: 48px;
+}
+
+@media (max-width: 1600px) {
+    .announcement {
+        font-size: 16px;
+    }
+    .announcement p marquee {
+        width: calc(100% - 300px);
+    }
+    .announcement p .social .socialIcon {
+        height: 18px;
+    }
+    .navbar .navbar-brand {
+        width: 320px;
+    }
+    .navbar .navbar-brand .logo {
+        width: 170px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+    }
+    footer .footer .head {
+        font-size: 18px;
+    }
+    footer .copyright {
+        background-color: #000;
+        text-align: center;
+        padding: 20px;
+    }
+    footer .copyright p {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    .aboutSection,
+    .eaglSection,
+    .gallerySection,
+    .mediaSection,
+    .partnerSection,
+    .playerSection,
+    .sponsorSection,
+    .teamsSection {
+        margin-top: 113px;
+    }
+    .commingSoon {
+        height: 650px;
+        background-size: 220px 370px;
+    }
+    .landingPage {
+        margin-top: 129px;
+    }
+    .landingPage .hero .content .overlayText {
+        padding: 20px;
+        margin-top: -200px;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 40px;
+    }
+    .landingPage .hero .content .overlayImage p {
+        margin-right: 178px;
+        margin-top: -210px;
+    }
+    .landingPage .hero .content .overlayImage .golf {
+        width: 165px;
+        margin-top: -180px;
+    }
+    .landingPage .about .heading {
+        font-size: 40px;
+    }
+    .landingPage .about .description {
+        font-size: 20px;
+    }
+    .landingPage .news .heading {
+        font-size: 40px;
+    }
+    .landingPage .news .nav.nav-pills {
+        height: 60px;
+    }
+    .landingPage .news .nav.nav-pills .nav-item .nav-link {
+        line-height: 40px;
+        font-size: 35px;
+        text-decoration-thickness: 6px;
+    }
+    .landingPage .news .tab-content h4 {
+        font-size: 28px;
+    }
+    .landingPage .news .tab-content .description {
+        font-size: 18px;
+    }
+    .landingPage .news .tab-content .more {
+        font-size: 18px;
+    }
+    .landingPage .team .heading {
+        font-size: 30px;
+    }
+    .landingPage .team .leftSide .teamOwners .title {
+        font-size: 40px;
+    }
+    .landingPage .team .leftSide .teamOwners .desc {
+        font-size: 20px;
+    }
+    .landingPage .team .leftSide .questions .title {
+        font-size: 40px;
+    }
+    .landingPage .team .leftSide .questions .card .quest {
+        font-size: 20px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .miniTitle {
+        font-size: 20px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .answers {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table {
+        font-size: 16px;
+        width: 334px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table.table-responsive img {
+        width: 20px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body ul {
+        font-size: 14px;
+    }
+    .landingPage .team .leftSide .register p {
+        font-size: 20px;
+    }
+    .landingPage .team .rightSide {
+        padding-top: 64px;
+    }
+    .landingPage .team .rightSide .federationSection .golf {
+        height: 200px;
+        width: 200px;
+    }
+    .landingPage .team .rightSide .federationSection .desc {
+        font-size: 16px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner p {
+        font-size: 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection {
+        padding: 280px 20px 50px 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection p {
+        font-size: 20px;
+    }
+    .aboutSection .concept {
+        padding: 100px 270px 50px 270px;
+    }
+    .aboutSection .vision {
+        padding: 50px 150px;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 90px 130px;
+    }
+    .aboutSection .promoters {
+        padding: 50px 270px;
+    }
+    .aboutSection .venues {
+        padding: 50px 270px;
+    }
+    .aboutSection .venues .card .card-footer .title {
+        font-size: 17px;
+    }
+    .aboutSection .venues .card .card-footer .short {
+        font-size: 14px;
+    }
+    .aboutSection .venues .owl-nav.disabled .owl-prev,
+    .aboutSection .venues .owl-nav.disabled .owl-next,
+    .aboutSection .venues .owl-nav .owl-prev,
+    .aboutSection .venues .owl-nav .owl-next {
+        margin-top: -180px;
+    }
+    .aboutSection .format {
+        padding: 50px 270px;
+    }
+    .aboutSection .format .teams {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 100px;
+        height: 100px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 140px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 16px;
+    }
+    .aboutSection .calendar {
+        padding: 50px 270px;
+    }
+    .aboutSection .calendar table {
+        width: 705px;
+    }
+    .teamsSection ul li {
+        font-size: 22px;
+    }
+    .teamsSection table {
+        font-size: 18px;
+    }
+    .teamsSection table tr:first-child {
+        font-size: 18px;
+    }
+    .teamsSection .miniHeads {
+        font-size: 18px;
+    }
+    .sponsorSection .opportunity table {
+        font-size: 18px;
+        width: 531px;
+    }
+    .sponsorSection .opportunity table tr:first-child {
+        font-size: 18px;
+    }
+    .partnerSection .opportunity ul li {
+        font-size: 20px;
+    }
+    .playerSection .whocanregister table {
+        margin-bottom: 40px;
+        width: 645px;
+        font-size: 18px;
+    }
+    .playerSection .whocanregister table tr:first-child {
+        font-size: 18px;
+    }
+    .unveiledParty .section-3 .download p {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .unveiledParty .section-3 .download .downloadSpeech {
+        height: 45px;
+        width: 260px;
+        font-size: 14px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills {
+        width: 100%;
+        height: 60px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills .nav-item .nav-link {
+        line-height: 40px;
+        font-size: 35px;
+    }
+    .unveiledParty .section-4 .tab-content h4 {
+        font-size: 35px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content h6 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content .watch {
+        font-size: 14px;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link {
+        border: 3px solid #000;
+        height: 60px;
+        width: 60px;
+        line-height: 40px;
+        font-size: 23px;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link.active,
+    .unveiledParty .section-4 .tab-content .pagination .page-link:hover {
+        line-height: 45px;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link.prev {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link.prev.active,
+    .unveiledParty .section-4 .tab-content .pagination .page-link.prev:hover {
+        line-height: 41px;
+    }
+    .testimonialSection .testimonial .contentBox .content .description {
+        font-size: 28px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .name {
+        font-size: 28px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .designation {
+        font-size: 16px;
+    }
+    .eaglSection .calendar table {
+        font-size: 18px;
+    }
+    .eaglSection .calendar table tr:first-child,
+    .eaglSection .calendar table tr:last-child {
+        font-size: 18px;
+    }
+    .eaglSection .fixtures table,
+    .eaglSection .draws table,
+    .eaglSection .leaderboard table,
+    .eaglSection .teamstandings table,
+    .eaglSection .livebroadcast table {
+        font-size: 18px;
+    }
+    .eaglSection .fixtures table tr:first-child,
+    .eaglSection .draws table tr:first-child,
+    .eaglSection .leaderboard table tr:first-child,
+    .eaglSection .teamstandings table tr:first-child,
+    .eaglSection .livebroadcast table tr:first-child {
+        font-size: 18px;
+    }
+    .eaglSection .fixtures .table1,
+    .eaglSection .draws .table1,
+    .eaglSection .leaderboard .table1,
+    .eaglSection .teamstandings .table1,
+    .eaglSection .livebroadcast .table1 {
+        width: 943px;
+    }
+    .eaglSection .fixtures .table2,
+    .eaglSection .draws .table2,
+    .eaglSection .leaderboard .table2,
+    .eaglSection .teamstandings .table2,
+    .eaglSection .livebroadcast .table2 {
+        width: 528px;
+    }
+    .eaglSection .fixtures .table3,
+    .eaglSection .draws .table3,
+    .eaglSection .leaderboard .table3,
+    .eaglSection .teamstandings .table3,
+    .eaglSection .livebroadcast .table3 {
+        width: 388px;
+    }
+    .gallerySection h4 {
+        font-size: 35px;
+    }
+    .gallerySection .row .content h6 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .gallerySection .row .content .watch {
+        font-size: 14px;
+    }
+    .gallerySection .pagination .page-link {
+        border: 3px solid #000;
+        height: 60px;
+        width: 60px;
+        line-height: 40px;
+        font-size: 23px;
+    }
+    .gallerySection .pagination .page-link.active,
+    .gallerySection .pagination .page-link:hover {
+        line-height: 45px;
+    }
+    .gallerySection .pagination .page-link.prev {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .gallerySection .pagination .page-link.prev.active,
+    .gallerySection .pagination .page-link.prev:hover {
+        line-height: 41px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 14px;
+    }
+    footer .footer .head {
+        font-size: 16px;
+    }
+    footer .copyright p {
+        font-size: 16px;
+    }
+    .announcement {
+        font-size: 14px;
+    }
+    .announcement p marquee {
+        width: calc(100% - 270px);
+    }
+    .announcement p .social .socialIcon {
+        height: 16px;
+    }
+    .aboutSection,
+    .eaglSection,
+    .gallerySection,
+    .mediaSection,
+    .partnerSection,
+    .playerSection,
+    .sponsorSection,
+    .teamsSection {
+        margin-top: 108px;
+    }
+    .commingSoon {
+        height: 600px;
+        background-size: 200px 350px;
+    }
+    .playerSection .description,
+    .partnerSection .description,
+    .sponsorSection .description,
+    .teamsSection .description,
+    .eaglSection .description,
+    .mediaSection .description,
+    .gallerySection .description,
+    .latestNewsSection .description {
+        font-size: 20px;
+    }
+    .playerSection .heading,
+    .partnerSection .heading,
+    .sponsorSection .heading,
+    .teamsSection .heading,
+    .eaglSection .heading,
+    .mediaSection .heading,
+    .gallerySection .heading,
+    .latestNewsSection .heading {
+        font-size: 40px;
+    }
+    .playerSection .minihead,
+    .partnerSection .minihead,
+    .sponsorSection .minihead,
+    .teamsSection .minihead,
+    .eaglSection .minihead,
+    .mediaSection .minihead,
+    .gallerySection .minihead,
+    .latestNewsSection .minihead {
+        font-size: 30px;
+    }
+    .contactSection .contactus .address {
+        font-size: 20px;
+    }
+    .landingPage {
+        margin-top: 128px;
+    }
+    .landingPage .hero .content .overlayText {
+        margin-left: 100px;
+        width: 50%;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 38px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .answers {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table {
+        font-size: 16px;
+        width: 304;
+    }
+    .landingPage .team .leftSide .questions .card .card-body ul {
+        font-size: 14px;
+    }
+    .landingPage .team .rightSide .federationSection .golf {
+        height: 180px;
+        width: 180px;
+    }
+    .landingPage .team .rightSide .federationSection .gee {
+        height: 50px;
+        width: 120px;
+    }
+    .landingPage .team .rightSide .federationSection .desc {
+        font-size: 16px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection {
+        padding: 260px 20px 50px 20px;
+    }
+    .aboutSection .heading {
+        font-size: 40px;
+    }
+    .aboutSection .description {
+        font-size: 20px;
+    }
+    .aboutSection .minihead {
+        font-size: 30px;
+    }
+    .aboutSection .concept {
+        padding: 100px 250px 40px 250px;
+    }
+    .aboutSection .concept ul li {
+        font-size: 18px;
+    }
+    .aboutSection .vision {
+        padding: 40px 150px;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 80px 120px;
+    }
+    .aboutSection .promoters {
+        padding: 40px 250px;
+    }
+    .aboutSection .venues {
+        padding: 40px 250px;
+    }
+    .aboutSection .venues .card .card-footer .title {
+        font-size: 14px;
+    }
+    .aboutSection .venues .card .card-footer .short {
+        font-size: 12px;
+    }
+    .aboutSection .venues .owl-nav.disabled .owl-prev,
+    .aboutSection .venues .owl-nav.disabled .owl-next,
+    .aboutSection .venues .owl-nav .owl-prev,
+    .aboutSection .venues .owl-nav .owl-next {
+        margin-top: -170px;
+    }
+    .aboutSection .format {
+        padding: 40px 250px;
+    }
+    .aboutSection .format .teams {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 130px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .aboutSection .format ul li {
+        font-size: 14px;
+    }
+    .aboutSection .format .point .miniText {
+        font-size: 14px;
+    }
+    .aboutSection .calendar {
+        padding: 40px 250px;
+    }
+    .aboutSection .calendar table {
+        width: 630px;
+        font-size: 16px;
+    }
+    .aboutSection .calendar table tr:last-child {
+        font-size: 16px;
+    }
+    .latestNewsSection {
+        padding: 100px 200px;
+    }
+    .playerSection .generalinformation {
+        padding: 100px 200px 40px 200px;
+    }
+    .playerSection .whocanregister {
+        padding: 40px 200px;
+    }
+    .playerSection .whocanregister table {
+        width: 576px;
+        font-size: 16px;
+    }
+    .playerSection .whocanregister table tr:first-child {
+        font-size: 16px;
+    }
+    .playerSection .registrationform {
+        padding: 40px 200px;
+    }
+    .playerSection .registrationform button {
+        font-size: 14px;
+    }
+    .playerSection .playerspool {
+        padding: 40px 100px 40px 100px;
+    }
+    .playerSection .benefits {
+        padding: 40px 200px 100px 200px;
+    }
+    .partnerSection .opportunity {
+        padding: 100px 200px 40px 200px;
+    }
+    .partnerSection .opportunity ul li {
+        font-size: 18px;
+    }
+    .partnerSection .benefits {
+        padding: 40px 200px 100px 200px;
+    }
+    .sponsorSection .opportunity {
+        padding: 100px 200px 40px 200px;
+    }
+    .sponsorSection .opportunity table {
+        font-size: 16px;
+        width: 475px;
+    }
+    .sponsorSection .opportunity table tr:first-child {
+        font-size: 16px;
+    }
+    .sponsorSection .benefits {
+        padding: 40px 200px 100px 200px;
+    }
+    .teamsSection ul li {
+        font-size: 20px;
+    }
+    .teamsSection table {
+        font-size: 16px;
+    }
+    .teamsSection table tr:first-child {
+        font-size: 16px;
+    }
+    .teamsSection .miniHeads {
+        font-size: 16px;
+    }
+    .teamsSection .numberofteams {
+        padding: 100px 200px 40px 200px;
+    }
+    .teamsSection .teamstructure,
+    .teamsSection .teamsapparel,
+    .teamsSection .ownateam {
+        padding: 40px 200px;
+    }
+    .teamsSection .teambenefits {
+        padding: 40px 200px 100px 200px;
+    }
+    .eaglSection .calendar {
+        padding: 100px 200px 40px 200px;
+    }
+    .eaglSection .calendar table {
+        font-size: 16px;
+        width: 475px;
+    }
+    .eaglSection .calendar table tr:first-child,
+    .eaglSection .calendar table tr:last-child {
+        font-size: 16px;
+    }
+    .eaglSection .fixtures,
+    .eaglSection .draws,
+    .eaglSection .leaderboard,
+    .eaglSection .teamstandings {
+        padding: 40px 200px;
+    }
+    .eaglSection .fixtures table,
+    .eaglSection .draws table,
+    .eaglSection .leaderboard table,
+    .eaglSection .teamstandings table {
+        font-size: 16px;
+    }
+    .eaglSection .fixtures table tr:first-child,
+    .eaglSection .draws table tr:first-child,
+    .eaglSection .leaderboard table tr:first-child,
+    .eaglSection .teamstandings table tr:first-child {
+        font-size: 16px;
+    }
+    .eaglSection .fixtures .table1,
+    .eaglSection .draws .table1,
+    .eaglSection .leaderboard .table1,
+    .eaglSection .teamstandings .table1 {
+        width: 859px;
+    }
+    .eaglSection .fixtures .table2,
+    .eaglSection .draws .table2,
+    .eaglSection .leaderboard .table2,
+    .eaglSection .teamstandings .table2 {
+        width: 480px;
+    }
+    .eaglSection .fixtures .table3,
+    .eaglSection .draws .table3,
+    .eaglSection .leaderboard .table3,
+    .eaglSection .teamstandings .table3 {
+        width: 356px;
+    }
+    .eaglSection .video,
+    .eaglSection .livebroadcast {
+        padding: 40px 200px 100px 200px;
+    }
+    .mediaSection .printmedia,
+    .mediaSection .photos,
+    .gallerySection .printmedia {
+        padding: 100px 200px 40px 200px;
+    }
+    .gallerySection .album {
+        padding: 100px 50px 40px 50px;
+    }
+    .mediaSection .socialmedia,
+    .mediaSection .tvcoverage,
+    .gallerySection .socialmedia,
+    .gallerySection .tvcoverage {
+        padding: 40px 200px;
+    }
+    .mediaSection .livebroadcast,
+    .mediaSection .videos,
+    .gallerySection .livebroadcast,
+    .gallerySection .videos,
+    .gallerySection .photos {
+        padding: 40px 200px 50px 200px;
+    }
+    .testimonialSection .testimonial .contentBox .content .description {
+        font-size: 25px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .name {
+        font-size: 25px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .designation {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .modal-content .wizard .wizard-inner .nav-tabs li img {
+        width: 35px;
+        margin-top: -16px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .modal-content .wizard .wizard-inner .nav-tabs li a {
+        font-size: 25px;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines {
+        font-size: 14px;
+    }
+    .modal-content .wizard .tab-content .contentBox .miniheading {
+        font-size: 18px;
+    }
+    .modal-content .wizard .tab-content .contentBox span.error {
+        font-size: 14px;
+    }
+    .modal-content .wizard .tab-content .contentBox input {
+        font-size: 18px;
+    }
+    .modal-content .wizard .tab-content .contentBox textarea {
+        font-size: 18px;
+    }
+    .modal-content .wizard .tab-content .contentBox select {
+        background-size: 22px;
+        font-size: 18px;
+    }
+    .modal-content .wizard .tab-content .contentBox .inputButtons .prev-step,
+    .modal-content .wizard .tab-content .contentBox .inputButtons .next-step {
+        font-size: 14px;
+        height: 45px;
+        width: 160px;
+    }
+    .modal-content .wizard .tab-content .checkboxs {
+        width: 650px;
+        font-size: 18px;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark {
+        height: 22px;
+        width: 22px;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark:after {
+        width: 14px;
+        height: 14px;
+    }
+    .navbar .navbar-brand {
+        width: 300px;
+    }
+    .navbar .navbar-brand .logo {
+        width: 170px;
+    }
+    .commingSoon {
+        height: 500px;
+        background-size: 200px 350px;
+    }
+    .landingPage .news .nav.nav-pills .nav-item .nav-link {
+        font-size: 30px;
+    }
+    .landingPage .news .tab-content h4 {
+        font-size: 26px;
+    }
+    .landingPage .news .tab-content .description {
+        font-size: 18px;
+    }
+    .landingPage .news .tab-content .more {
+        font-size: 18px;
+    }
+    .landingPage .team .heading {
+        font-size: 30px;
+    }
+    .landingPage .team .leftSide .teamOwners .desc {
+        font-size: 20px;
+    }
+    .landingPage .team .leftSide .questions .card .quest {
+        font-size: 20px;
+    }
+    .landingPage .team .leftSide .questions .card .miniTitle {
+        font-size: 20px;
+    }
+    .landingPage .team .leftSide .register p {
+        font-size: 20px;
+    }
+    .landingPage .team .rightSide {
+        padding-top: 59px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner p {
+        font-size: 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection {
+        padding: 250px 20px 50px 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection p {
+        font-size: 20px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 100px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 14px;
+        letter-spacing: 3.27px;
+        line-height: 20px;
+    }
+    .aboutSection .format ul li {
+        margin-bottom: 20px;
+    }
+    .eaglSection .calendar {
+        padding: 100px 200px 40px 200px;
+    }
+    .eaglSection .fixtures,
+    .eaglSection .draws,
+    .eaglSection .leaderboard,
+    .eaglSection .teamstandings {
+        padding: 40px 200px;
+    }
+    .eaglSection .video,
+    .eaglSection .livebroadcast {
+        padding: 40px 200px 100px 200px;
+    }
+    .mediaSection .printmedia,
+    .mediaSection .photos,
+    .gallerySection .printmedia {
+        padding: 100px 200px 40px 200px;
+    }
+    .mediaSection .socialmedia,
+    .mediaSection .tvcoverage,
+    .gallerySection .socialmedia,
+    .gallerySection .tvcoverage {
+        padding: 40px 200px;
+    }
+    .mediaSection .livebroadcast,
+    .mediaSection .videos,
+    .gallerySection .livebroadcast,
+    .gallerySection .videos,
+    .gallerySection .photos {
+        padding: 40px 200px 50px 200px;
+    }
+    .unveiledParty .section-1 h1 {
+        font-size: 60px;
+        margin-bottom: 80px;
+    }
+    .unveiledParty .section-1 h3 {
+        font-size: 50px;
+    }
+    .unveiledParty .section-1 h6 {
+        font-size: 35px;
+    }
+    .unveiledParty .section-3 h4 {
+        font-size: 50px;
+    }
+    .unveiledParty .section-3 .download p {
+        font-size: 22px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills .nav-item .nav-link {
+        font-size: 30px;
+    }
+    .unveiledParty .section-4 .tab-content h4 {
+        font-size: 30px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content h6 {
+        font-size: 22px;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link {
+        height: 50px;
+        width: 50px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link.active,
+    .unveiledParty .section-4 .tab-content .pagination .page-link:hover {
+        line-height: 35px;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link.prev {
+        font-size: 35px;
+        line-height: 25px;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link.prev.active,
+    .unveiledParty .section-4 .tab-content .pagination .page-link.prev:hover {
+        line-height: 31px;
+    }
+    .errorpage {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .errorpage img {
+        width: 500px;
+        margin-bottom: 80px;
+    }
+    .errorpage .back {
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .testimonialSection .testimonial .contentBox .content .description {
+        font-size: 20px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .name {
+        font-size: 20px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .designation {
+        font-size: 14px;
+    }
+    .gallerySection h4 {
+        font-size: 30px;
+    }
+    .gallerySection .row .content h6 {
+        font-size: 22px;
+    }
+    .gallerySection .pagination .page-link {
+        height: 50px;
+        width: 50px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .gallerySection .pagination .page-link.active,
+    .gallerySection .pagination .page-link:hover {
+        line-height: 35px;
+    }
+    .gallerySection .pagination .page-link.prev {
+        font-size: 35px;
+        line-height: 25px;
+    }
+    .gallerySection .pagination .page-link.prev.active,
+    .gallerySection .pagination .page-link.prev:hover {
+        line-height: 31px;
+    }
+}
+
+@media (max-width: 1330px) {
+    .navbar .navbar-brand {
+        width: 280px;
+    }
+    .navbar .navbar-nav .nav-item {
+        margin-left: 5px;
+    }
+    .landingPage {
+        margin-top: 125px;
+    }
+    .landingPage .hero {
+        padding: 40px;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 35px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        width: 80px;
+    }
+    .landingPage .hero .content .overlayImage p {
+        font-size: 20px;
+        margin-right: 130px;
+    }
+    .landingPage .hero .content .overlayImage .golf {
+        margin-right: 100px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .navbar .navbar-brand {
+        width: 250px;
+        padding: 10px 20px;
+    }
+    .navbar .navbar-brand .logo {
+        width: 150px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 13px;
+    }
+    .aboutSection,
+    .eaglSection,
+    .gallerySection,
+    .mediaSection,
+    .partnerSection,
+    .playerSection,
+    .sponsorSection,
+    .teamsSection {
+        margin-top: 106px;
+    }
+    .playerSection .heading,
+    .partnerSection .heading,
+    .sponsorSection .heading,
+    .teamsSection .heading,
+    .eaglSection .heading,
+    .mediaSection .heading,
+    .gallerySection .heading,
+    .latestNewsSection .heading {
+        font-size: 35px;
+    }
+    .playerSection .description,
+    .partnerSection .description,
+    .sponsorSection .description,
+    .teamsSection .description,
+    .eaglSection .description,
+    .mediaSection .description,
+    .gallerySection .description,
+    .latestNewsSection .description {
+        font-size: 20px;
+    }
+    .playerSection .minihead,
+    .partnerSection .minihead,
+    .sponsorSection .minihead,
+    .teamsSection .minihead,
+    .eaglSection .minihead,
+    .mediaSection .minihead,
+    .gallerySection .minihead,
+    .latestNewsSection .minihead {
+        font-size: 28px;
+    }
+    .contactSection .contactus {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: 500px;
+    }
+    .contactSection .contactus .address {
+        font-size: 18px;
+    }
+    .aboutSection .heading {
+        font-size: 35px;
+    }
+    .aboutSection .description {
+        font-size: 20px;
+    }
+    .aboutSection .minihead {
+        font-size: 28px;
+    }
+    .aboutSection .concept {
+        padding: 80px 220px 30px 220px;
+    }
+    .aboutSection .concept ul li {
+        font-size: 18px;
+    }
+    .aboutSection .vision {
+        padding: 40px 150px 30px 150px;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 60px 100px;
+    }
+    .aboutSection .promoters {
+        padding: 40px 220px 30px 220px;
+    }
+    .aboutSection .venues {
+        padding: 40px 220px 30px 220px;
+    }
+    .aboutSection .venues .card .card-footer {
+        height: 120px;
+    }
+    .aboutSection .venues .card .card-footer .title {
+        font-size: 14px;
+    }
+    .aboutSection .venues .card .card-footer .short {
+        font-size: 13px;
+    }
+    .aboutSection .venues .owl-nav.disabled .owl-prev,
+    .aboutSection .venues .owl-nav.disabled .owl-next,
+    .aboutSection .venues .owl-nav .owl-prev,
+    .aboutSection .venues .owl-nav .owl-next {
+        margin-top: -150px;
+    }
+    .aboutSection .format {
+        padding: 40px 220px 30px 220px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 100px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 14px;
+        letter-spacing: 3.27px;
+        line-height: 20px;
+    }
+    .aboutSection .format ul li {
+        font-size: 16px;
+    }
+    .aboutSection .format .point .miniText {
+        font-size: 16px;
+    }
+    .aboutSection .calendar {
+        padding: 40px 220px 30px 220px;
+    }
+    .aboutSection .calendar table {
+        width: 630px;
+        font-size: 16px;
+    }
+    .aboutSection .calendar table tr:last-child {
+        font-size: 16px;
+    }
+    .latestNewsSection {
+        padding: 80px 150px;
+    }
+    .playerSection .generalinformation {
+        padding: 80px 150px 30px 150px;
+    }
+    .playerSection .whocanregister {
+        padding: 30px 150px;
+    }
+    .playerSection .registrationform {
+        padding: 30px 150px;
+    }
+    .playerSection .playerspool {
+        padding: 30px 150px;
+    }
+    .playerSection .benefits {
+        padding: 30px 150px 80px 150px;
+    }
+    .partnerSection .opportunity {
+        padding: 80px 150px 30px 150px;
+    }
+    .partnerSection .benefits {
+        padding: 30px 150px 80px 150px;
+    }
+    .sponsorSection .opportunity {
+        padding: 80px 150px 30px 150px;
+    }
+    .sponsorSection .benefits {
+        padding: 30px 150px 80px 150px;
+    }
+    .teamsSection .numberofteams {
+        padding: 80px 150px 30px 150px;
+    }
+    .teamsSection .teamstructure,
+    .teamsSection .teamsapparel,
+    .teamsSection .ownateam {
+        padding: 30px 150px;
+    }
+    .teamsSection .teambenefits {
+        padding: 30px 150px 80px 150px;
+    }
+    .eaglSection .calendar {
+        padding: 80px 150px 30px 150px;
+    }
+    .eaglSection .fixtures,
+    .eaglSection .draws,
+    .eaglSection .leaderboard,
+    .eaglSection .teamstandings {
+        padding: 30px 150px;
+    }
+    .eaglSection .video,
+    .eaglSection .livebroadcast {
+        padding: 30px 150px 80px 150px;
+    }
+    .mediaSection .printmedia,
+    .mediaSection .photos,
+    .gallerySection .printmedia {
+        padding: 80px 150px 30px 150px;
+    }
+    .gallerySection .album {
+        padding: 80px 50px 30px 50px;
+    }
+    .mediaSection .socialmedia,
+    .mediaSection .tvcoverage,
+    .gallerySection .socialmedia,
+    .gallerySection .tvcoverage {
+        padding: 30px 150px;
+    }
+    .mediaSection .livebroadcast,
+    .mediaSection .videos,
+    .gallerySection .livebroadcast,
+    .gallerySection .videos,
+    .gallerySection .photos {
+        padding: 30px 150px 50px 150px;
+    }
+    .unveiledParty .section-1 {
+        padding: 100px 72px;
+    }
+    .unveiledParty .section-1 h1 {
+        margin-bottom: 70px;
+        letter-spacing: 7px;
+    }
+    .unveiledParty .section-2 {
+        padding-bottom: 120px;
+    }
+    .unveiledParty .section-3 .download {
+        margin-top: 100px;
+    }
+    .unveiledParty .section-3 .download p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+    .unveiledParty .section-3 .download .downloadSpeech {
+        letter-spacing: 3px;
+        line-height: 20px;
+    }
+    .unveiledParty .section-4 {
+        padding: 120px 72px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .modal-content .wizard .wizard-inner .nav-tabs li img {
+        width: 30px;
+        margin-top: -10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .modal-content .wizard .wizard-inner .nav-tabs li a {
+        font-size: 20px;
+    }
+    .modal-content .wizard .tab-content {
+        margin-top: 40px;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines {
+        font-size: 14px;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines:nth-child(2) {
+        margin-bottom: 40px;
+    }
+    .modal-content .wizard .tab-content .contentBox .miniheading {
+        font-size: 18px;
+    }
+    .modal-content .wizard .tab-content .contentBox span.error {
+        font-size: 14px;
+    }
+    .modal-content .wizard .tab-content .contentBox input {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .modal-content .wizard .tab-content .contentBox textarea {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .modal-content .wizard .tab-content .contentBox select {
+        background-size: 22px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .modal-content .wizard .tab-content .contentBox .inputButtons .prev-step,
+    .modal-content .wizard .tab-content .contentBox .inputButtons .next-step {
+        font-size: 14px;
+        height: 45px;
+        width: 160px;
+    }
+    .modal-content .wizard .tab-content .checkboxs {
+        width: 650px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark {
+        height: 22px;
+        width: 22px;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark:after {
+        width: 14px;
+        height: 14px;
+    }
+    .navbar {
+        height: auto;
+        padding: 0;
+        padding-right: 20px;
+    }
+    .navbar .navbar-brand {
+        height: 70px;
+        width: 230px;
+    }
+    .navbar .navbar-brand .logo {
+        width: 130px;
+    }
+    .navbar .navbar-nav .nav-item {
+        margin-left: 20px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 14px;
+    }
+    .navbar .navbar-nav .nav-item .dropdown-toggle::after {
+        float: right;
+    }
+    .navbar .navbar-nav .nav-item:first-child {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .navbar .navbar-nav .nav-item:nth-child(10) {
+        margin-bottom: 20px;
+    }
+    .announcement {
+        font-size: 14px;
+    }
+    .contactSection,
+    .testimonialSection,
+    .unveiledParty,
+    .gallerySection.albumSection {
+        margin-top: 70px;
+    }
+    .aboutSection,
+    .eaglSection,
+    .gallerySection,
+    .mediaSection,
+    .partnerSection,
+    .playerSection,
+    .sponsorSection,
+    .teamsSection {
+        margin-top: 104px;
+    }
+    .landingPage {
+        margin-top: 127px;
+    }
+    .landingPage .hero {
+        padding: 30px;
+    }
+    .landingPage .hero .content .overlayText {
+        width: 38%;
+        margin-left: 70px;
+        margin-top: -200px;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 25px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        width: 60px;
+    }
+    .landingPage .hero .content .overlayImage p {
+        font-size: 18px;
+        margin-right: 100px;
+        margin-top: -200px;
+    }
+    .landingPage .hero .content .overlayImage .golf {
+        margin-top: -160px;
+        margin-right: 70px;
+        width: 140px;
+    }
+    .landingPage .about {
+        padding: 80px 120px 30px 120px;
+    }
+    .landingPage .news {
+        padding: 30px 120px;
+    }
+    .landingPage .team {
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+    .landingPage .team .leftSide .teamOwners {
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    .landingPage .team .leftSide .teamOwners .title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .teamOwners .desc {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    .landingPage .team .leftSide .questions .title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .questions .card .quest {
+        font-size: 25px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .miniTitle {
+        font-size: 25px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .answers {
+        font-size: 18px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table {
+        font-size: 18px;
+        width: 334px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body ul {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .register {
+        padding: 25px;
+        margin-top: 40px;
+    }
+    .landingPage .team .leftSide .register p {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    .landingPage .team .rightSide .players {
+        margin-bottom: 40px;
+    }
+    .landingPage .team .rightSide .federationSection {
+        margin-bottom: 40px;
+    }
+    .landingPage .team .rightSide .federationSection .golf {
+        height: 180px;
+        width: 180px;
+        margin-bottom: 0;
+    }
+    .landingPage .team .rightSide .federationSection .gee {
+        height: 40px;
+        width: 100px;
+    }
+    .landingPage .team .rightSide .federationSection .desc {
+        font-size: 14px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner {
+        margin-bottom: 40px;
+        padding: 20px 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner p {
+        font-size: 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection {
+        padding: 240px 10px 40px 10px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection p {
+        font-size: 20px;
+    }
+    .aboutSection .concept {
+        padding: 80px 200px 30px 200px;
+    }
+    .aboutSection .vision {
+        padding: 40px 120px 30px 120px;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 60px 80px;
+    }
+    .aboutSection .promoters {
+        padding: 40px 200px 30px 200px;
+    }
+    .aboutSection .venues {
+        padding: 40px 200px 30px 200px;
+    }
+    .aboutSection .venues .card .card-footer {
+        padding: 20px 10px;
+        height: 120px;
+    }
+    .aboutSection .venues .card .card-footer .title {
+        font-size: 14px;
+    }
+    .aboutSection .venues .card .card-footer .short {
+        font-size: 13px;
+    }
+    .aboutSection .venues .owl-nav.disabled,
+    .aboutSection .venues .owl-nav {
+        font-size: 20px;
+    }
+    .aboutSection .venues .owl-nav.disabled .owl-prev,
+    .aboutSection .venues .owl-nav.disabled .owl-next,
+    .aboutSection .venues .owl-nav .owl-prev,
+    .aboutSection .venues .owl-nav .owl-next {
+        padding: 0px 12px 2px 12px !important;
+        border: solid 2px #1860a5;
+        border-radius: 50%;
+        margin-top: -150px;
+    }
+    .aboutSection .format {
+        padding: 40px 200px 30px 200px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 60px;
+        height: 60px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 80px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 20px;
+    }
+    .aboutSection .calendar {
+        padding: 40px 200px 30px 200px;
+    }
+    .aboutSection .calendar table {
+        width: 630px;
+        font-size: 16px;
+    }
+    .aboutSection .calendar table tr:last-child {
+        font-size: 16px;
+    }
+    .latestNewsSection {
+        padding: 80px 100px;
+    }
+    .playerSection .generalinformation {
+        padding: 80px 100px 30px 100px;
+    }
+    .playerSection .whocanregister {
+        padding: 30px 100px;
+    }
+    .playerSection .registrationform {
+        padding: 30px 100px;
+    }
+    .playerSection .playerspool {
+        padding: 30px 100px;
+    }
+    .playerSection .benefits {
+        padding: 30px 100px 80px 100px;
+    }
+    .partnerSection .opportunity {
+        padding: 80px 100px 30px 100px;
+    }
+    .partnerSection .benefits {
+        padding: 30px 100px 80px 100px;
+    }
+    .sponsorSection .opportunity {
+        padding: 80px 100px 30px 100px;
+    }
+    .sponsorSection .benefits {
+        padding: 30px 100px 80px 100px;
+    }
+    .teamsSection .numberofteams {
+        padding: 80px 100px 30px 100px;
+    }
+    .teamsSection .teamstructure,
+    .teamsSection .teamsapparel,
+    .teamsSection .ownateam {
+        padding: 30px 100px;
+    }
+    .teamsSection .teambenefits {
+        padding: 30px 100px 80px 100px;
+    }
+    .eaglSection .calendar {
+        padding: 80px 100px 30px 100px;
+    }
+    .eaglSection .calendar table {
+        font-size: 14px;
+    }
+    .eaglSection .calendar table tr:first-child,
+    .eaglSection .calendar table tr:last-child {
+        font-size: 14px;
+    }
+    .eaglSection .fixtures,
+    .eaglSection .draws,
+    .eaglSection .leaderboard,
+    .eaglSection .teamstandings {
+        padding: 30px 100px;
+    }
+    .eaglSection .fixtures table,
+    .eaglSection .draws table,
+    .eaglSection .leaderboard table,
+    .eaglSection .teamstandings table {
+        font-size: 14px;
+    }
+    .eaglSection .fixtures table tr:first-child,
+    .eaglSection .draws table tr:first-child,
+    .eaglSection .leaderboard table tr:first-child,
+    .eaglSection .teamstandings table tr:first-child {
+        font-size: 14px;
+    }
+    .eaglSection .fixtures .table1,
+    .eaglSection .draws .table1,
+    .eaglSection .leaderboard .table1,
+    .eaglSection .teamstandings .table1 {
+        width: auto;
+    }
+    .eaglSection .fixtures .table2,
+    .eaglSection .draws .table2,
+    .eaglSection .leaderboard .table2,
+    .eaglSection .teamstandings .table2 {
+        width: 432px;
+    }
+    .eaglSection .fixtures .table3,
+    .eaglSection .draws .table3,
+    .eaglSection .leaderboard .table3,
+    .eaglSection .teamstandings .table3 {
+        width: 324px;
+    }
+    .eaglSection .video,
+    .eaglSection .livebroadcast {
+        padding: 30px 100px 80px 100px;
+    }
+    .mediaSection .printmedia,
+    .mediaSection .photos,
+    .gallerySection .printmedia {
+        padding: 80px 100px 30px 100px;
+    }
+    .mediaSection .socialmedia,
+    .mediaSection .tvcoverage,
+    .gallerySection .socialmedia,
+    .gallerySection .tvcoverage {
+        padding: 30px 100px;
+    }
+    .mediaSection .livebroadcast,
+    .mediaSection .videos,
+    .gallerySection .livebroadcast,
+    .gallerySection .videos,
+    .gallerySection .photos {
+        padding: 30px 100px 50px 100px;
+    }
+    .unveiledParty .section-1 {
+        padding: 100px 50px;
+    }
+    .unveiledParty .section-1 h1 {
+        margin-bottom: 60px;
+    }
+    .unveiledParty .section-1 h3 {
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-2 {
+        padding: 50px;
+        padding-bottom: 100px;
+    }
+    .unveiledParty .section-3 {
+        padding: 50px;
+    }
+    .unveiledParty .section-3 h4 {
+        margin-bottom: 50px;
+    }
+    .unveiledParty .section-3 .download {
+        margin-top: 80px;
+        padding: 50px;
+    }
+    .unveiledParty .section-3 .download p {
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-4 {
+        padding: 100px 50px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills {
+        margin-bottom: 50px;
+    }
+    .unveiledParty .section-4 .tab-content h4 {
+        letter-spacing: 3px;
+        margin-bottom: 50px;
+    }
+    .unveiledParty .section-4 .tab-content .row {
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content {
+        padding: 20px 10px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content h6 {
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+    .errorpage {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .errorpage img {
+        width: 400px;
+        margin-bottom: 50px;
+    }
+    .testimonialSection {
+        padding: 80px 50px;
+    }
+    .testimonialSection .testimonial {
+        margin-bottom: 120px;
+    }
+    .testimonialSection .testimonial .contentBox .content .description {
+        font-size: 20px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .name {
+        font-size: 20px;
+    }
+    .gallerySection h4 {
+        letter-spacing: 3px;
+        margin-bottom: 50px;
+    }
+    .gallerySection .row {
+        margin-bottom: 30px;
+    }
+    .gallerySection .row .content {
+        padding: 20px 10px;
+    }
+    .gallerySection .row .content h6 {
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    footer .footer {
+        padding: 80px;
+    }
+    footer .footer .desc {
+        margin-bottom: 50px;
+    }
+    footer .footer .desc img {
+        width: 120px;
+    }
+    footer .footer .desc .golf {
+        width: 80px;
+    }
+    footer .footer .socialMedia:last-child .social {
+        width: 50px;
+    }
+    footer .footer input {
+        padding: 10px 15px;
+        height: 40px;
+    }
+    footer .footer .submitButton {
+        font-size: 14px;
+        height: 40px;
+        width: 160px;
+    }
+    footer .copyright p {
+        font-size: 16px;
+    }
+    .eaglSection {
+        margin-top: 122px;
+    }
+    .landingPage .hero {
+        padding: 20px;
+    }
+    .landingPage .hero .content .overlayText {
+        width: 45%;
+        margin-left: 50px;
+        margin-top: -160px;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 20px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        width: 50px;
+    }
+    .landingPage .hero .content .overlayImage p {
+        font-size: 16px;
+        margin-right: 55px;
+        margin-top: -160px;
+    }
+    .landingPage .hero .content .overlayImage .golf {
+        margin-top: -130px;
+        margin-right: 30px;
+        width: 120px;
+    }
+    .landingPage .about {
+        padding: 50px 100px 30px 100px;
+    }
+    .landingPage .news {
+        padding: 30px 100px;
+    }
+    .landingPage .news .nav.nav-pills {
+        height: 50px;
+    }
+    .landingPage .news .nav.nav-pills .nav-item .nav-link {
+        line-height: 30px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-decoration-thickness: 5px;
+    }
+    .aboutSection .concept {
+        padding: 80px 150px 20px 150px;
+    }
+    .aboutSection .vision {
+        padding: 40px 100px 20px 100px;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 60px 80px;
+    }
+    .aboutSection .promoters {
+        padding: 40px 150px 20px 150px;
+    }
+    .aboutSection .venues {
+        padding: 40px 150px 20px 150px;
+    }
+    .aboutSection .format {
+        padding: 40px 150px 20px 150px;
+    }
+    .aboutSection .format .teams {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 60px;
+        height: 60px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 80px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 20px;
+    }
+    .aboutSection .format .point {
+        margin-top: 40px;
+    }
+    .aboutSection .calendar {
+        padding: 40px 150px 20px 150px;
+    }
+    .unveiledParty .section-1 h1 {
+        font-size: 50px;
+        letter-spacing: 6px;
+    }
+    .unveiledParty .section-1 h3 {
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    .unveiledParty .section-1 h6 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .unveiledParty .section-3 h4 {
+        font-size: 35px;
+    }
+    .unveiledParty .section-3 .download p {
+        font-size: 17px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills {
+        height: 50px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills .nav-item .nav-link {
+        line-height: 30px;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .unveiledParty .section-4 .tab-content h4 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content h6 {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content .watch {
+        padding: 8px 40px;
+        letter-spacing: 2px;
+    }
+    .gallerySection h4 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .gallerySection .row .content h6 {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+    }
+    .gallerySection .row .content .watch {
+        padding: 8px 40px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 991px) {
+    .modal-content .wizard .wizard-inner .nav-tabs li img {
+        width: 22px;
+        margin-top: -10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .modal-content .wizard .wizard-inner .nav-tabs li a {
+        font-size: 18px;
+    }
+    .modal-content .wizard .tab-content {
+        margin-top: 30px;
+    }
+    .modal-content .wizard .tab-content .contentBox {
+        width: 100%;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .modal-content .wizard .tab-content .contentBox .miniheading {
+        font-size: 16px;
+    }
+    .modal-content .wizard .tab-content .contentBox span.error {
+        font-size: 13px;
+    }
+    .modal-content .wizard .tab-content .contentBox input {
+        font-size: 16px;
+        margin-bottom: 30px;
+        padding: 5px 20px;
+    }
+    .modal-content .wizard .tab-content .contentBox textarea {
+        font-size: 16px;
+        padding: 5px 20px;
+        margin-bottom: 30px;
+    }
+    .modal-content .wizard .tab-content .contentBox select {
+        background-size: 22px;
+        font-size: 16px;
+        padding: 5px 20px;
+        margin-bottom: 30px;
+    }
+    .modal-content .wizard .tab-content .contentBox .inputButtons .prev-step,
+    .modal-content .wizard .tab-content .contentBox .inputButtons .next-step {
+        font-size: 14px;
+        height: 40px;
+        width: 140px;
+    }
+    .modal-content .wizard .tab-content .checkboxs {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark {
+        height: 20px;
+        width: 20px;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark:after {
+        width: 12px;
+        height: 12px;
+    }
+    .navbar {
+        height: auto;
+        padding: 0;
+        padding-right: 20px;
+    }
+    .navbar .navbar-nav .nav-item.social-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 8px 0;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border-top: solid 1px #000;
+    }
+    .navbar .navbar-nav .nav-item.social-item p {
+        margin-bottom: 0;
+    }
+    .navbar .navbar-nav .nav-item.social-item p a .socialIcon {
+        margin-right: 20px;
+        height: 20px;
+    }
+    .navbar .navbar-nav .nav-item.social-item p a:last-child .socialIcon {
+        margin-right: 0px;
+    }
+    footer .footer {
+        padding: 60px;
+    }
+    footer .footer .desc.sec {
+        margin-top: 60px;
+    }
+    footer .footer .socialMedia:last-child .social {
+        width: 40px;
+    }
+    footer .footer input {
+        padding: 10px 15px;
+        height: 40px;
+    }
+    footer .footer .submitButton {
+        height: 40px;
+        width: 160px;
+    }
+    footer .copyright p {
+        font-size: 14px;
+    }
+    .announcement p marquee {
+        width: 100%;
+    }
+    .announcement p .social {
+        display: none;
+    }
+    .miniAbouts .nav-link {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .miniAbouts .nav-link.active,
+    .miniAbouts .nav-link:hover {
+        font-size: 14px;
+    }
+    .aboutSection,
+    .gallerySection,
+    .mediaSection,
+    .partnerSection,
+    .playerSection,
+    .sponsorSection,
+    .teamsSection {
+        margin-top: 102px;
+    }
+    .eaglSection {
+        margin-top: 118px;
+    }
+    .landingPage .hero {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    .landingPage .hero .content .overlayText {
+        position: relative;
+        width: 60%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 20px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        width: 50px;
+        margin-left: 50%;
+        margin-top: -90%;
+    }
+    .landingPage .hero .content .overlayImage {
+        width: 100%;
+    }
+    .landingPage .hero .content .overlayImage p {
+        font-size: 16px;
+        margin-right: 40px;
+        margin-top: -140px;
+    }
+    .landingPage .hero .content .overlayImage .golf {
+        margin-top: -115px;
+        margin-right: 20px;
+        width: 120px;
+    }
+    .landingPage .team {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .landingPage .team .leftSide .teamOwners .title {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .teamOwners .desc {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .landingPage .team .leftSide .questions .title {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .questions .card .quest {
+        font-size: 20px;
+    }
+    .landingPage .team .leftSide .questions .card .quest a img {
+        width: 12px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .answers {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table {
+        font-size: 16px;
+        width: 304px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body ul {
+        font-size: 14px;
+    }
+    .landingPage .team .leftSide .register {
+        padding: 25px;
+        margin-top: 40px;
+    }
+    .landingPage .team .leftSide .register p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .landingPage .team .rightSide .players {
+        margin-bottom: 40px;
+    }
+    .landingPage .team .rightSide .federationSection {
+        margin-bottom: 40px;
+    }
+    .landingPage .team .rightSide .federationSection .golf {
+        height: 140px;
+        width: 140px;
+    }
+    .landingPage .team .rightSide .federationSection .gee {
+        height: 30px;
+        width: 80px;
+    }
+    .landingPage .team .rightSide .federationSection .desc {
+        font-size: 12px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner {
+        margin-bottom: 40px;
+        padding: 20px 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner p {
+        font-size: 16px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection {
+        padding: 200px 10px 40px 10px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection p {
+        font-size: 16px;
+    }
+    .landingPage .news .nav.nav-pills .nav-item .nav-link {
+        font-size: 25px;
+    }
+    .aboutSection .concept {
+        padding: 80px 100px 20px 100px;
+    }
+    .aboutSection .vision {
+        padding: 40px 100px 20px 100px;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 60px;
+    }
+    .aboutSection .promoters {
+        padding: 40px 100px 20px 100px;
+    }
+    .aboutSection .venues {
+        padding: 40px 100px 20px 100px;
+    }
+    .aboutSection .venues .card .card-footer {
+        padding: 20px 5px;
+        height: 120px;
+    }
+    .aboutSection .venues .card .card-footer .title {
+        font-size: 13px;
+    }
+    .aboutSection .venues .card .card-footer .short {
+        font-size: 12px;
+    }
+    .aboutSection .format {
+        padding: 40px 100px 20px 100px;
+    }
+    .aboutSection .format .teams {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 50px;
+        height: 50px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 60px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 13px;
+        letter-spacing: 2.5px;
+    }
+    .aboutSection .calendar {
+        padding: 40px 100px 20px 100px;
+    }
+    .aboutSection .calendar table {
+        width: 560px;
+    }
+    .aboutSection .calendar table tr:last-child {
+        font-size: 14px;
+    }
+    .teamsSection table {
+        width: auto;
+    }
+    .unveiledParty .section-1 {
+        padding: 80px 30px;
+    }
+    .unveiledParty .section-1 h1 {
+        font-size: 45px;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+    }
+    .unveiledParty .section-1 h3 {
+        font-size: 30px;
+        letter-spacing: 4px;
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-1 h6 {
+        font-size: 20px;
+    }
+    .unveiledParty .section-2 {
+        padding: 30px;
+        padding-bottom: 50px;
+    }
+    .unveiledParty .section-3 {
+        padding: 30px;
+    }
+    .unveiledParty .section-3 h4 {
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-3 .download {
+        margin-top: 50px;
+        padding: 30px;
+    }
+    .unveiledParty .section-3 .download p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .unveiledParty .section-3 .download .downloadSpeech {
+        height: 40px;
+        width: 200px;
+        font-size: 13px;
+    }
+    .unveiledParty .section-4 {
+        padding: 60px 30px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills {
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills .nav-item .nav-link {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .unveiledParty .section-4 .tab-content h4 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .unveiledParty .section-4 .tab-content .row {
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content h6 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .testimonialSection {
+        padding: 50px 30px;
+    }
+    .testimonialSection .testimonial {
+        margin-bottom: 80px;
+    }
+    .testimonialSection .testimonial .contentBox .content .description {
+        font-size: 20px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .name {
+        font-size: 20px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .designation {
+        font-size: 14px;
+    }
+    .gallerySection h4 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .gallerySection .row {
+        margin-bottom: 30px;
+    }
+    .gallerySection .row .content h6 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .playerSection {
+        margin-top: 118px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        width: 40px;
+        margin-top: -91%;
+    }
+    .testimonialSection {
+        padding: 50px 30px;
+    }
+    .testimonialSection .testimonial .contentBox .content .description {
+        font-size: 18px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .name {
+        font-size: 18px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .designation {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer .footer {
+        padding: 40px 5px;
+    }
+    footer .footer ul {
+        list-style: none;
+    }
+    footer .footer ul li {
+        margin-bottom: 5px;
+    }
+    footer .footer .links .heading.sec {
+        margin-top: 40px;
+    }
+    footer .footer .subscribe .heading.sec {
+        margin-top: 25px;
+    }
+    footer .footer .desc.sec {
+        margin-top: 40px;
+    }
+    footer .footer .submitButton {
+        margin-right: 10px;
+    }
+    .announcement {
+        font-size: 13px;
+    }
+    .announcement p .calendar {
+        width: 22px;
+    }
+    .landingPage {
+        margin-top: 118px;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 18px;
+    }
+    .landingPage .hero .content .overlayText .read {
+        font-size: 13px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        width: 40px;
+        margin-top: -95%;
+    }
+    .landingPage .hero .content .overlayImage p {
+        font-size: 16px;
+        margin-top: -140px;
+        margin-right: 30px;
+    }
+    .landingPage .hero .content .overlayImage .golf {
+        margin-top: -110px;
+        width: 100px;
+    }
+    .landingPage .about {
+        padding: 40px 20px 30px 20px;
+    }
+    .landingPage .about .heading {
+        font-size: 35px;
+    }
+    .landingPage .about .description {
+        font-size: 18px;
+    }
+    .landingPage .news {
+        padding: 20px 30px;
+    }
+    .landingPage .news .heading {
+        font-size: 35px;
+    }
+    .landingPage .news .tab-content .content {
+        border-right: none;
+    }
+    .landingPage .news .tab-content h4 {
+        font-size: 22px;
+        line-height: 1;
+    }
+    .landingPage .news .tab-content .description {
+        font-size: 16px;
+    }
+    .landingPage .news .tab-content .more {
+        font-size: 16px;
+    }
+    .landingPage .team {
+        padding: 0;
+        overflow: hidden;
+    }
+    .landingPage .team .heading {
+        margin-bottom: 20px;
+    }
+    .landingPage .team .teams {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .landingPage .team .leftSide .teamOwners {
+        margin-top: 40px;
+        padding: 30px 20px;
+    }
+    .landingPage .team .leftSide .teamOwners .title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .teamOwners .desc {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    .landingPage .team .leftSide .questions .title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .questions .card {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .landingPage .team .leftSide .questions .card .quest a img {
+        width: 12px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body {
+        font-size: 18px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .miniTitle {
+        font-size: 25px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .answers {
+        font-size: 18px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table {
+        font-size: 18px;
+        width: 334px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table.table-responsive img {
+        width: 16px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body ul {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .register {
+        padding: 20px;
+        margin-top: 80px;
+    }
+    .landingPage .team .leftSide .register p {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    .landingPage .team .rightSide {
+        padding-top: 0;
+    }
+    .landingPage .team .rightSide .players {
+        margin-bottom: 40px;
+        margin-top: 90px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 95%;
+    }
+    .landingPage .team .rightSide .federationSection {
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .landingPage .team .rightSide .federationSection .golf {
+        height: 200px;
+        width: 200px;
+    }
+    .landingPage .team .rightSide .federationSection .gee {
+        height: 60px;
+        width: 140px;
+    }
+    .landingPage .team .rightSide .federationSection .desc {
+        font-size: 18px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner {
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 40px 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner p {
+        font-size: 18px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 300px 10px 50px 10px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection p {
+        font-size: 18px;
+    }
+    .aboutSection {
+        margin-top: 118px;
+    }
+    .aboutSection .heading {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .aboutSection .description {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .aboutSection .minihead {
+        font-size: 22px;
+    }
+    .aboutSection .concept {
+        padding: 40px 20px 0 20px;
+    }
+    .aboutSection .concept ul li {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .aboutSection .vision {
+        padding: 40px 20px 0 20px;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 60px;
+    }
+    .aboutSection .promoters {
+        padding: 40px 20px 0 20px;
+    }
+    .aboutSection .venues {
+        padding: 40px 20px 0 20px;
+    }
+    .aboutSection .venues .card .card-footer {
+        padding: 20px 5px;
+        height: 120px;
+    }
+    .aboutSection .venues .card .card-footer .title {
+        font-size: 13px;
+    }
+    .aboutSection .venues .card .card-footer .short {
+        font-size: 12px;
+    }
+    .aboutSection .venues .owl-nav.disabled .owl-prev,
+    .aboutSection .venues .owl-nav.disabled .owl-next,
+    .aboutSection .venues .owl-nav .owl-prev,
+    .aboutSection .venues .owl-nav .owl-next {
+        margin-top: 20px;
+        position: relative;
+    }
+    .aboutSection .venues .owl-nav.disabled .owl-prev,
+    .aboutSection .venues .owl-nav .owl-prev {
+        left: 20px;
+    }
+    .aboutSection .venues .owl-nav.disabled .owl-next,
+    .aboutSection .venues .owl-nav .owl-next {
+        right: 20px;
+        float: right;
+    }
+    .aboutSection .format {
+        padding: 40px 20px 0 20px;
+    }
+    .aboutSection .format .teams {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 50px;
+        height: 50px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 60px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 13px;
+        letter-spacing: 2.5px;
+    }
+    .aboutSection .format ul {
+        width: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+    .aboutSection .format ul li {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .aboutSection .format ul+.description {
+        margin-bottom: 40px;
+    }
+    .aboutSection .format .point {
+        margin-top: 40px;
+    }
+    .aboutSection .calendar {
+        padding: 40px 20px 40px 20px;
+    }
+    .aboutSection .calendar table {
+        width: auto;
+    }
+    .teamsSection {
+        margin-top: 118px;
+    }
+    .playerSection .heading,
+    .partnerSection .heading,
+    .sponsorSection .heading,
+    .teamsSection .heading,
+    .eaglSection .heading,
+    .mediaSection .heading,
+    .gallerySection .heading,
+    .latestNewsSection .heading {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .playerSection .description,
+    .partnerSection .description,
+    .sponsorSection .description,
+    .teamsSection .description,
+    .eaglSection .description,
+    .mediaSection .description,
+    .gallerySection .description,
+    .latestNewsSection .description {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .playerSection .minihead,
+    .partnerSection .minihead,
+    .sponsorSection .minihead,
+    .teamsSection .minihead,
+    .eaglSection .minihead,
+    .mediaSection .minihead,
+    .gallerySection .minihead,
+    .latestNewsSection .minihead {
+        font-size: 22px;
+    }
+    .contactSection .contactus {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .contactSection .contactus .address {
+        font-size: 16px;
+    }
+    .latestNewsSection {
+        padding: 40px 20px;
+    }
+    .playerSection .generalinformation {
+        padding: 40px 20px 0px 20px;
+    }
+    .playerSection .whocanregister {
+        padding: 40px 20px 0px 20px;
+    }
+    .playerSection .registrationform {
+        padding: 40px 20px 0px 20px;
+    }
+    .playerSection .playerspool {
+        padding: 40px 20px 0px 20px;
+    }
+    .playerSection .benefits {
+        padding: 40px 20px 40px 20px;
+    }
+    .partnerSection .opportunity {
+        padding: 40px 20px 0px 20px;
+    }
+    .partnerSection .opportunity ul li {
+        font-size: 18px;
+    }
+    .partnerSection .benefits {
+        padding: 40px 20px 40px 20px;
+    }
+    .sponsorSection .opportunity {
+        padding: 40px 20px 0px 20px;
+    }
+    .sponsorSection .benefits {
+        padding: 40px 20px 40px 20px;
+    }
+    .teamsSection ul li {
+        font-size: 18px;
+    }
+    .teamsSection .numberofteams {
+        padding: 40px 20px 0px 20px;
+    }
+    .teamsSection .teamstructure,
+    .teamsSection .teamsapparel,
+    .teamsSection .ownateam {
+        padding: 40px 20px 0px 20px;
+    }
+    .teamsSection .teambenefits {
+        padding: 40px 20px 0px 20px;
+    }
+    .eaglSection .calendar {
+        padding: 40px 20px 0px 20px;
+    }
+    .eaglSection .fixtures,
+    .eaglSection .draws,
+    .eaglSection .leaderboard,
+    .eaglSection .teamstandings {
+        padding: 40px 20px 0px 20px;
+    }
+    .eaglSection .video,
+    .eaglSection .livebroadcast {
+        padding: 40px 20px 40px 20px;
+    }
+    .mediaSection .printmedia,
+    .mediaSection .photos,
+    .gallerySection .printmedia {
+        padding: 40px 20px 0px 20px;
+    }
+    .gallerySection .album {
+        padding: 40px 20px 40px 20px;
+    }
+    .mediaSection .socialmedia,
+    .mediaSection .tvcoverage,
+    .gallerySection .socialmedia,
+    .gallerySection .tvcoverage {
+        padding: 40px 20px 0px 20px;
+    }
+    .mediaSection .livebroadcast,
+    .mediaSection .videos,
+    .gallerySection .livebroadcast,
+    .gallerySection .videos,
+    .gallerySection .photos {
+        padding: 40px 20px 40px 20px;
+    }
+    .testimonialSection {
+        padding: 50px 20px;
+    }
+    .testimonialSection .testimonial {
+        margin-bottom: 50px;
+    }
+    .testimonialSection .testimonial .contentBox .content .description {
+        font-size: 15px;
+        line-height: 1;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .name {
+        font-size: 15px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .designation {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 680px) {
+    .landingPage .hero .content .overlayPlay .play {
+        width: 40px;
+        margin-top: -105%;
+        top: 0;
+    }
+    .landingPage .team .rightSide .players {
+        max-width: 94%;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 40px;
+    }
+    .aboutSection .venues .card .card-footer {
+        height: 100px;
+    }
+    .aboutSection .venues .card .card-footer .title {
+        font-size: 12px;
+    }
+    .aboutSection .venues .card .card-footer .short {
+        font-size: 10px;
+    }
+    .aboutSection .format .teams {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 50px;
+        height: 50px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 60px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 13px;
+        letter-spacing: normal;
+    }
+}
+
+@media (max-width: 600px) {
+    .eaglSection {
+        margin-top: 150px;
+    }
+    .landingPage .hero .content .overlayText {
+        width: 70%;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 16px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        width: 30px;
+        margin-top: -105%;
+        top: 0;
+    }
+    .landingPage .team .rightSide .players {
+        max-width: 93%;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 40px;
+    }
+    .aboutSection .venues .card .card-footer {
+        height: 100px;
+    }
+    .aboutSection .venues .card .card-footer .title {
+        font-size: 12px;
+    }
+    .aboutSection .venues .card .card-footer .short {
+        font-size: 10px;
+    }
+    .aboutSection .venues .owl-nav {
+        color: #1860a5;
+        font-size: 15px;
+    }
+    .aboutSection .venues .owl-nav .owl-prev,
+    .aboutSection .venues .owl-nav .owl-next {
+        margin-top: 20px;
+        position: relative;
+        border: solid #1860a5 2px;
+        border-radius: 50%;
+        padding: 0 10px 2px 10px !important;
+    }
+    .aboutSection .venues .owl-nav .owl-prev {
+        left: 20px;
+    }
+    .aboutSection .venues .owl-nav .owl-next {
+        right: 20px;
+        float: right;
+    }
+    .aboutSection .format .teams {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .aboutSection .format .teams .withImg,
+    .aboutSection .format .teams img {
+        width: 50px;
+        height: 50px;
+    }
+    .aboutSection .format .teams .withImg {
+        font-size: 60px;
+    }
+    .aboutSection .format .teams .desc {
+        font-size: 13px;
+        letter-spacing: normal;
+    }
+    .aboutSection .format ul {
+        margin-left: 40px;
+    }
+    .playerSection .whocanregister table {
+        width: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    footer .footer .submitButton {
+        position: relative;
+        margin-top: 20px;
+        line-height: 1;
+    }
+    .navbar .dropdown-menu {
+        display: none;
+    }
+    .miniAbouts {
+        display: none;
+    }
+    .miniAboutsMobile {
+        display: block;
+        height: 34px;
+        background-color: #bfbfbf;
+    }
+    .miniAboutsMobile button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url(../images/arrow.png);
+        background-repeat: no-repeat;
+        background-position: right 30px center;
+        background-color: transparent;
+        background-size: 15px;
+        border: none;
+        width: 100%;
+        padding: 8px 30px;
+        font-size: 14px;
+        color: #666666;
+        font-weight: bold;
+        font-family: "Ubuntu", sans-serif;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .miniAboutsMobile button:hover {
+        color: #1860a5;
+    }
+    .miniAboutsMobile .dropdown-menu {
+        width: 100%;
+        margin: 0;
+    }
+    .miniAboutsMobile .dropdown-menu .dropdown-item {
+        color: #666666;
+    }
+    .miniAboutsMobile .dropdown-menu .dropdown-item:hover {
+        color: #fff;
+        background-color: #1860a5;
+    }
+    .aboutSection,
+    .eaglSection,
+    .gallerySection,
+    .mediaSection,
+    .partnerSection,
+    .playerSection,
+    .sponsorSection,
+    .teamsSection {
+        margin-top: 104px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        margin-top: -110%;
+    }
+    .landingPage .about .heading {
+        font-size: 30px;
+    }
+    .landingPage .about .description {
+        font-size: 16px;
+    }
+    .landingPage .news .heading {
+        font-size: 30px;
+    }
+    .landingPage .news .nav.nav-pills {
+        height: auto;
+    }
+    .landingPage .news .nav.nav-pills .nav-item {
+        width: 100%;
+    }
+    .landingPage .news .tab-content h4 {
+        font-size: 20px;
+    }
+    .landingPage .news .tab-content .description {
+        font-size: 14px;
+    }
+    .landingPage .news .tab-content .more {
+        font-size: 14px;
+    }
+    .landingPage .team .leftSide .teamOwners .title {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .teamOwners .desc {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .landingPage .team .leftSide .questions .title {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .questions .card .quest {
+        font-size: 20px;
+    }
+    .landingPage .team .leftSide .questions .card .quest a img {
+        width: 12px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .answers {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table {
+        font-size: 16px;
+        width: 304px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body ul {
+        font-size: 14px;
+    }
+    .landingPage .team .leftSide .register p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .aboutSection .heading {
+        font-size: 30px;
+    }
+    .aboutSection .description {
+        font-size: 16px;
+    }
+    .aboutSection .minihead {
+        font-size: 22px;
+    }
+    .aboutSection .concept ul li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .aboutSection .vision .visionsection {
+        padding: 30px;
+    }
+    .aboutSection .venues .card .card-footer {
+        height: 90px;
+    }
+    .aboutSection .format {
+        padding-top: 30px;
+    }
+    .aboutSection .format .teams {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .aboutSection .format .teams .columns {
+        margin-bottom: 30px;
+    }
+    .aboutSection .format .teams .columns:nth-child(2) {
+        border: 0;
+    }
+    .aboutSection .format ul {
+        margin-left: 40px;
+    }
+    .aboutSection .format ul li {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .playerSection .heading,
+    .partnerSection .heading,
+    .sponsorSection .heading,
+    .teamsSection .heading,
+    .eaglSection .heading,
+    .mediaSection .heading,
+    .gallerySection .heading,
+    .latestNewsSection .heading {
+        font-size: 30px;
+    }
+    .playerSection .description,
+    .partnerSection .description,
+    .sponsorSection .description,
+    .teamsSection .description,
+    .eaglSection .description,
+    .mediaSection .description,
+    .gallerySection .description,
+    .latestNewsSection .description {
+        font-size: 16px;
+    }
+    .playerSection .minihead,
+    .partnerSection .minihead,
+    .sponsorSection .minihead,
+    .teamsSection .minihead,
+    .eaglSection .minihead,
+    .mediaSection .minihead,
+    .gallerySection .minihead,
+    .latestNewsSection .minihead {
+        font-size: 22px;
+    }
+    .contactSection .contactus {
+        width: 90%;
+    }
+    .contactSection .contactus select {
+        font-size: 25px;
+        background-size: 20px;
+        padding-right: 50px;
+    }
+    .contactSection .contactus select option {
+        font-size: 18px;
+    }
+    .teamsSection ul li {
+        font-size: 16px;
+    }
+    .partnerSection .opportunity ul li {
+        font-size: 16px;
+    }
+    .sponsorSection .opportunity table {
+        width: auto;
+    }
+    .unveiledParty .section-1 {
+        padding: 80px 20px;
+        background-image: url(../images/eaglMobile.png);
+    }
+    .unveiledParty .section-1 h1 {
+        font-size: 26px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-1 h3 {
+        font-size: 20px;
+        letter-spacing: 4px;
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-1 h6 {
+        font-size: 18px;
+    }
+    .unveiledParty .section-2 {
+        padding: 20px;
+        padding-bottom: 36px;
+    }
+    .unveiledParty .section-3 {
+        padding: 20px;
+    }
+    .unveiledParty .section-3 h4 {
+        margin-bottom: 24px;
+        font-size: 25px;
+    }
+    .unveiledParty .section-3 .download {
+        margin-top: 27px;
+        padding: 24px;
+        background-image: url(../images/blackBgMobile.png);
+    }
+    .unveiledParty .section-3 .download p {
+        font-size: 15px;
+        line-height: 17px;
+        margin-bottom: 24px;
+    }
+    .unveiledParty .section-3 .download .downloadSpeech {
+        height: 40px;
+        width: 200px;
+        font-size: 10px;
+    }
+    .unveiledParty .section-4 {
+        padding: 48px 20px;
+    }
+    .unveiledParty .section-4 .nav.nav-pills {
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .unveiledParty .section-4 .nav.nav-pills .nav-item {
+        width: 100%;
+    }
+    .unveiledParty .section-4 .tab-content h4 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .unveiledParty .section-4 .tab-content .row {
+        margin-bottom: 30px;
+    }
+    .unveiledParty .section-4 .tab-content .row .content {
+        text-align: center;
+    }
+    .unveiledParty .section-4 .tab-content .row .content h6 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .unveiledParty .section-4 .tab-content .pagination .page-link {
+        margin-right: 5px;
+    }
+    .testimonialSection .testimonial {
+        margin-bottom: 50px;
+    }
+    .testimonialSection .testimonial img {
+        border-radius: 20px;
+    }
+    .testimonialSection .testimonial .contentBox {
+        padding: 30px 0;
+    }
+    .testimonialSection .testimonial .contentBox .content {
+        display: block;
+        height: 80%;
+        background: url(../images/testimonials/air_quotes_1.png) top 0 left 0 no-repeat, url(../images/testimonials/air_quotes_2.png) right 0 bottom 0 no-repeat;
+    }
+    .testimonialSection .testimonial .contentBox .content .description {
+        font-size: 16px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 {
+        position: relative;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .name {
+        font-size: 16px;
+    }
+    .testimonialSection .testimonial .contentBox .content1 .designation {
+        font-size: 14px;
+    }
+    .eaglSection .calendar table,
+    .eaglSection .fixtures table,
+    .eaglSection .draws table,
+    .eaglSection .leaderboard table,
+    .eaglSection .teamstandings table {
+        width: auto;
+    }
+    .eaglSection .fixtures .table2,
+    .eaglSection .draws .table2,
+    .eaglSection .leaderboard .table2,
+    .eaglSection .teamstandings .table2 {
+        width: auto;
+    }
+    .eaglSection .fixtures .table3,
+    .eaglSection .draws .table3,
+    .eaglSection .leaderboard .table3,
+    .eaglSection .teamstandings .table3 {
+        width: auto;
+    }
+    .gallerySection h4 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .gallerySection .row {
+        margin-bottom: 30px;
+    }
+    .gallerySection .row .content {
+        text-align: center;
+    }
+    .gallerySection .row .content h6 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .gallerySection .pagination .page-link {
+        margin-right: 5px;
+    }
+    .gallerySection .album .left {
+        border-right: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .modal-content .wizard .wizard-inner .nav-tabs li img {
+        width: 20px;
+        margin-top: -10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .modal-content .wizard .wizard-inner .nav-tabs li a {
+        font-size: 16px;
+    }
+    .modal-content .wizard .tab-content {
+        margin-top: 30px;
+    }
+    .modal-content .wizard .tab-content .contentBox {
+        width: 100%;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .modal-content .wizard .tab-content .contentBox .miniheading {
+        font-size: 16px;
+    }
+    .modal-content .wizard .tab-content .contentBox span.error {
+        font-size: 13px;
+    }
+    .modal-content .wizard .tab-content .contentBox input {
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 5px 15px;
+    }
+    .modal-content .wizard .tab-content .contentBox textarea {
+        font-size: 16px;
+        padding: 5px 15px;
+        margin-bottom: 20px;
+    }
+    .modal-content .wizard .tab-content .contentBox select {
+        background-size: 22px;
+        font-size: 16px;
+        padding: 5px 15px;
+        margin-bottom: 20px;
+    }
+    .modal-content .wizard .tab-content .contentBox .inputButtons .prev-step,
+    .modal-content .wizard .tab-content .contentBox .inputButtons .next-step {
+        font-size: 14px;
+        height: 40px;
+        width: 140px;
+    }
+    .modal-content .wizard .tab-content .checkboxs {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark {
+        height: 20px;
+        width: 20px;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark:after {
+        width: 12px;
+        height: 12px;
+    }
+    .landingPage .hero {
+        background-image: url(../images/mobileView.png);
+    }
+    .landingPage .hero .content .overlayText {
+        width: 93%;
+        margin-top: -10px;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        margin-top: -115%;
+    }
+    .landingPage .hero .content .overlayImage {
+        position: relative;
+        width: 96%;
+    }
+    .landingPage .hero .content .overlayImage p {
+        margin-bottom: 15px;
+        display: block;
+        float: none;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+    .landingPage .hero .content .overlayImage .golf {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 130px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .landingPage .team .rightSide .players {
+        max-width: 92.5%;
+    }
+    .errorpage img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .landingPage .hero .content .overlayText {
+        width: 92%;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        margin-top: -130%;
+    }
+    .landingPage .team .leftSide .teamOwners {
+        margin-top: 20px;
+    }
+    .landingPage .team .rightSide .players {
+        max-width: 92%;
+    }
+}
+
+@media (max-width: 450px) {
+    .announcement {
+        letter-spacing: normal;
+    }
+    .announcement p .calendar {
+        width: 20px;
+        margin-right: 5px;
+    }
+    .landingPage .hero .content .overlayText {
+        width: 90%;
+        padding: 15px;
+        margin-top: -20px;
+    }
+    .landingPage .hero .content .overlayText .heading {
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .landingPage .hero .content .overlayText .read {
+        margin-bottom: 0;
+        padding: 8px 20px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        margin-top: -115%;
+    }
+    .landingPage .hero .content .overlayImage .golf {
+        width: 100px;
+    }
+    .landingPage .about .heading {
+        margin-bottom: 20px;
+    }
+    .landingPage .news .heading {
+        margin-bottom: 20px;
+    }
+    .landingPage .team .leftSide .teamOwners .title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .teamOwners .desc {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .landingPage .team .leftSide .teamOwners .ownTeam {
+        font-size: 13px;
+        padding: 5px 20px;
+    }
+    .landingPage .team .leftSide .questions .title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .landingPage .team .leftSide .questions .card .quest {
+        font-size: 16px;
+    }
+    .landingPage .team .leftSide .questions .card .quest a {
+        letter-spacing: 1;
+    }
+    .landingPage .team .leftSide .questions .card .quest a img {
+        width: 12px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body {
+        font-size: 14px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .miniTitle {
+        font-size: 18px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body .answers {
+        font-size: 14px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body table {
+        font-size: 14px;
+        width: 270px;
+    }
+    .landingPage .team .leftSide .questions .card .card-body ul {
+        font-size: 14px;
+    }
+    .landingPage .team .leftSide .register {
+        padding: 25px;
+        margin-top: 40px;
+    }
+    .landingPage .team .leftSide .register p {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .landingPage .team .leftSide .register .registerPlayer {
+        font-size: 13px;
+        padding: 5px 20px;
+    }
+    .landingPage .team .rightSide .players {
+        max-width: 91%;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .landingPage .team .rightSide .federationSection {
+        margin-bottom: 40px;
+    }
+    .landingPage .team .rightSide .federationSection .golf {
+        height: 180px;
+        width: 180px;
+    }
+    .landingPage .team .rightSide .federationSection .gee {
+        height: 40px;
+        width: 100px;
+    }
+    .landingPage .team .rightSide .federationSection .desc {
+        font-size: 14px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner {
+        padding: 30px 20px;
+    }
+    .landingPage .team .rightSide .bannerSection .banner p {
+        font-size: 16px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection {
+        padding: 250px 10px 50px 10px;
+    }
+    .landingPage .team .rightSide .bannerSection .actionSection p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .modal-content .wizard .wizard-inner .nav-tabs li img {
+        width: 17px;
+        margin-top: -6px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .modal-content .wizard .wizard-inner .nav-tabs li a {
+        font-size: 14px;
+    }
+    .modal-content .wizard .tab-content {
+        margin-top: 20px;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .modal-content .wizard .tab-content .contentBox .taglines:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    .modal-content .wizard .tab-content .contentBox .miniheading {
+        font-size: 14px;
+    }
+    .modal-content .wizard .tab-content .contentBox span.error {
+        font-size: 13px;
+    }
+    .modal-content .wizard .tab-content .contentBox input {
+        font-size: 14px;
+        margin-bottom: 15px;
+        padding: 0px 20px;
+    }
+    .modal-content .wizard .tab-content .contentBox textarea {
+        font-size: 14px;
+        padding: 0px 20px;
+        margin-bottom: 15px;
+    }
+    .modal-content .wizard .tab-content .contentBox select {
+        background-size: 20px;
+        font-size: 14px;
+        padding: 0px 20px;
+        margin-bottom: 15px;
+    }
+    .modal-content .wizard .tab-content .contentBox .inputButtons .prev-step,
+    .modal-content .wizard .tab-content .contentBox .inputButtons .next-step {
+        font-size: 13px;
+        height: 40px;
+        width: 100px;
+    }
+    .modal-content .wizard .tab-content .checkboxs {
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark {
+        height: 15px;
+        width: 15px;
+    }
+    .modal-content .wizard .tab-content .checkboxs .checkmark:after {
+        width: 7px;
+        height: 7px;
+    }
+    .navbar .navbar-brand {
+        width: 190px;
+        padding: 10px;
+    }
+    .navbar .navbar-brand .logo {
+        width: 130px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        width: 25px;
+        margin-top: -115%;
+    }
+    .landingPage .team .rightSide .players {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    .landingPage .hero .content .overlayText {
+        width: 89%;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        margin-top: -125%;
+    }
+    .landingPage .team .rightSide .players {
+        max-width: 89%;
+    }
+    .errorpage img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    footer .copyright p {
+        font-size: 12px;
+    }
+    .landingPage .hero .content .overlayText {
+        margin-top: -10px;
+    }
+    .landingPage .hero .content .overlayPlay .play {
+        margin-top: -140%;
+    }
+    .landingPage .team .rightSide .players {
+        width: 89%;
+    }
+}
+
+@media (max-width: 340px) {
+    .landingPage .hero .content .overlayPlay .play {
+        margin-top: -145%;
+    }
+    .landingPage .team .rightSide .players {
+        width: 88%;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+.album_video {
+    min-height: 300px;
+}
+
+@media (max-width:1380px) {
+    .album_video {
+        min-height: 250px;
+    }
+}
+
+@media (max-width:991px) {
+    .album_video {
+        min-height: 200px;
+    }
+}
+
+@media (max-width:767px) {
+    .album_video {
+        min-height: 220px;
+    }
+}
+
+@media (max-width:575px) {
+    .album_video {
+        min-height: 320px;
+    }
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+hr.star-light,
+hr.star-portfolio {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 3px;
+    text-align: center;
+}
+
+hr.star-light:after,
+hr.star-portfolio:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-portfolio {
+    border-color: black;
+}
+
+hr.star-portfolio:after {
+    color: black;
+    background-color: #eee;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: rgb(13, 79, 136);
+}
+
+p.content-text {
+    font-size: 25px;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio-card {
+    box-shadow: 0px 2px 5px #888888;
+    background: #eee;
+    border-radius: 4px;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0px 10px 10px #888888;
+    cursor: pointer
+}
+
+.portfolio-container-holder {
+    background: #eee;
+    padding-bottom: 20px;
+}
+
+.portfolio-card-holder {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.portfolio-img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.portfolio-img-desc {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+}
