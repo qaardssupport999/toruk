@@ -38,7 +38,13 @@
     font-family: Ubuntu;
     src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
 }
+@media (min-width: 1200px) {
+    .responsive-font-example {
+      font-size: 80px;
+      text-align: center; 
 
+    }
+  }
 input:hover,
 input:focus,
 input:active,
@@ -64,7 +70,13 @@ button:active {
     border: none;
     border-radius: 0;
 }
+.center{
 
+    display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%
+}
 .modal-content .close {
     opacity: 1;
 }
