@@ -1141,6 +1141,10 @@ footer .copyright p {
 .landingPage .team .leftSide .questions .card .card-body .answers {
     font-size: 18px;
 }
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .landingPage .team .leftSide .questions .card .card-body table {
     width: 780px;
